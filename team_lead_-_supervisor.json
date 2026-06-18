@@ -1,0 +1,90 @@
+{
+  "roleId": "CIOS-TL-002",
+  "roleName": "Team Lead / Supervisor",
+  "summary": "Coaches frontline staff, sustains flow, and triages improvement opportunities.",
+  "responsibilities": [
+    "Facilitate daily huddles and communicate operational priorities",
+    "Ensure adherence to standard work and 5S practices",
+    "Monitor process metrics and identify deviations",
+    "Triage improvement suggestions and classify them into micro-Kaizen, mesoscale, or CQI projects",
+    "Coordinate small-scale experiments and PDCA cycles",
+    "Support operators in problem-solving and waste elimination",
+    "Escalate systemic issues to Process Engineers or Quality Managers",
+    "Maintain visual management boards and ensure real-time accuracy"
+  ],
+  "authorities": [
+    "Approve micro-Kaizen changes within defined scope",
+    "Reassign work to maintain flow",
+    "Initiate mesoscale improvement projects",
+    "Escalate quality or safety issues immediately"
+  ],
+  "inputs": [
+    "Daily operational metrics",
+    "Standard work documentation",
+    "Improvement suggestions from operators",
+    "Visual management boards",
+    "Safety and quality alerts"
+  ],
+  "outputs": [
+    "Updated visual boards",
+    "Triage decisions",
+    "Escalation reports",
+    "Experiment results",
+    "Team performance summaries"
+  ],
+  "metricsOwned": [
+    "Team throughput",
+    "Adherence to standard work",
+    "5S audit scores",
+    "Short-interval control metrics",
+    "Operator engagement in improvement"
+  ],
+  "decisionRights": [
+    "Prioritization of team-level improvements",
+    "Approval of small-scale process adjustments",
+    "Assignment of team resources",
+    "Escalation of high-risk issues"
+  ],
+  "kaizenCapabilities": [
+    "Facilitation of team-based problem solving",
+    "Waste identification coaching",
+    "Gemba leadership",
+    "Rapid experimentation"
+  ],
+  "cqiCapabilities": [
+    "Metric interpretation",
+    "Root-cause facilitation",
+    "Deviation classification",
+    "Pilot validation"
+  ],
+  "digitalTwinAttributes": {
+    "sensors": [
+      "TeamThroughputSensor",
+      "WorkBalanceMonitor",
+      "DeviationHeatmap",
+      "5SComplianceTracker"
+    ],
+    "actions": [
+      "ReassignWork",
+      "ApproveMicroKaizen",
+      "TriggerEscalation",
+      "UpdateVisualBoard",
+      "LaunchPDCAExperiment"
+    ],
+    "constraints": [
+      "Cannot modify controlled parameters without Quality approval",
+      "Must maintain compliance with safety and quality standards",
+      "Must document all triage decisions"
+    ]
+  },
+  "interfaces": {
+    "upstream": ["Process Engineer", "Quality Manager"],
+    "downstream": ["Frontline Operator"],
+    "systems": [
+      "VisualManagementSystem",
+      "ImprovementPipeline",
+      "OperationalDashboard",
+      "DeviationReportingTool"
+    ]
+  }
+}
