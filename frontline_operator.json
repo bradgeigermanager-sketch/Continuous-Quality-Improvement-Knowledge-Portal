@@ -1,0 +1,81 @@
+{
+  "roleId": "CIOS-OP-001",
+  "roleName": "Frontline Operator",
+  "summary": "Executes standard work, detects waste, and initiates micro-Kaizen improvements.",
+  "responsibilities": [
+    "Perform standard work according to documented procedures",
+    "Identify waste, friction, and process deviations",
+    "Submit improvement suggestions through the CI-OS pipeline",
+    "Participate in PDCA cycles and small-scale experiments",
+    "Maintain 5S conditions and visual management elements",
+    "Provide real-time feedback on process changes and countermeasures"
+  ],
+  "authorities": [
+    "Implement micro-Kaizen changes within defined boundaries",
+    "Escalate issues to Team Lead",
+    "Stop work for safety or quality concerns"
+  ],
+  "inputs": [
+    "Standard work instructions",
+    "Visual management boards",
+    "Process metrics",
+    "Work orders",
+    "Safety guidelines"
+  ],
+  "outputs": [
+    "Completed work units",
+    "Improvement suggestions",
+    "Deviation reports",
+    "5S compliance status"
+  ],
+  "metricsOwned": [
+    "Cycle time",
+    "First-pass yield",
+    "Defect rate",
+    "5S audit score"
+  ],
+  "decisionRights": [
+    "Micro-level process adjustments",
+    "Initiation of improvement suggestions",
+    "Immediate safety interventions"
+  ],
+  "kaizenCapabilities": [
+    "Waste identification",
+    "Idea generation",
+    "Workspace organization",
+    "Visual management upkeep"
+  ],
+  "cqiCapabilities": [
+    "Deviation detection",
+    "Data capture",
+    "Participation in root-cause discussions"
+  ],
+  "digitalTwinAttributes": {
+    "sensors": [
+      "CycleTimeSensor",
+      "DefectCounter",
+      "WorkloadMonitor",
+      "EnvironmentalSafetySensor"
+    ],
+    "actions": [
+      "AdjustWorkSequence",
+      "SubmitImprovementSignal",
+      "TriggerSafetyStop",
+      "AnnotateDeviation"
+    ],
+    "constraints": [
+      "Must follow standard work unless authorized",
+      "Cannot modify controlled parameters",
+      "Safety rules override all other actions"
+    ]
+  },
+  "interfaces": {
+    "upstream": ["Team Lead"],
+    "downstream": ["Process Engineer", "Quality Manager"],
+    "systems": [
+      "SuggestionSystem",
+      "OperationalDashboard",
+      "DeviationReportingTool"
+    ]
+  }
+}
