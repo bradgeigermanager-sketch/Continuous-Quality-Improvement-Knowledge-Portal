@@ -1,0 +1,97 @@
+{
+  "roleId": "CIOS-QM-004",
+  "roleName": "Quality Manager / CQI Governance Lead",
+  "summary": "Owns the formal quality system, governs CQI rigor, and ensures compliance, traceability, and controlled change.",
+  "responsibilities": [
+    "Define and maintain quality metrics, control limits, and capability baselines",
+    "Oversee the Continuous Quality Improvement (CQI) governance framework",
+    "Ensure compliance with regulatory, safety, and organizational standards",
+    "Conduct audits, manage audit schedules, and verify corrective actions",
+    "Review and approve changes to controlled documents and standard work",
+    "Manage the human-review queue for ambiguous or high-risk deviations",
+    "Validate improvement outcomes using statistical and evidence-based methods",
+    "Ensure proper documentation, traceability, and version control for all process changes",
+    "Collaborate with Process Engineers to evaluate systemic risks and improvement opportunities",
+    "Provide quality training and reinforce quality culture across the organization"
+  ],
+  "authorities": [
+    "Approve or reject process changes",
+    "Define controlled parameters and attribute authority",
+    "Initiate formal investigations into quality or safety issues",
+    "Escalate risks to executive leadership",
+    "Suspend operations in case of critical quality failures"
+  ],
+  "inputs": [
+    "Audit reports",
+    "Deviation logs",
+    "Process capability data",
+    "Improvement project documentation",
+    "Regulatory requirements",
+    "Customer complaints and feedback"
+  ],
+  "outputs": [
+    "Quality reports",
+    "Audit findings",
+    "Corrective and preventive action plans",
+    "Approved process changes",
+    "Updated controlled documents",
+    "Risk assessments"
+  ],
+  "metricsOwned": [
+    "Defect rate",
+    "Audit compliance score",
+    "Corrective action closure time",
+    "Process stability indicators",
+    "Regulatory compliance metrics"
+  ],
+  "decisionRights": [
+    "Final approval of controlled changes",
+    "Definition of quality standards and thresholds",
+    "Authorization of corrective actions",
+    "Classification of deviations and nonconformities",
+    "Escalation of systemic risks"
+  ],
+  "kaizenCapabilities": [
+    "Coaching teams on quality-focused improvements",
+    "Identifying waste related to rework, defects, and variation",
+    "Supporting cross-functional improvement workshops"
+  ],
+  "cqiCapabilities": [
+    "Statistical process control",
+    "Root-cause analysis leadership",
+    "Audit execution and governance",
+    "Risk assessment and mitigation planning",
+    "Evidence-based validation of improvements"
+  ],
+  "digitalTwinAttributes": {
+    "sensors": [
+      "QualityDeviationMonitor",
+      "AuditComplianceTracker",
+      "ProcessStabilitySensor",
+      "RiskSignalDetector"
+    ],
+    "actions": [
+      "ApproveControlledChange",
+      "TriggerAudit",
+      "ClassifyDeviation",
+      "IssueCorrectiveAction",
+      "SuspendOperationForQuality"
+    ],
+    "constraints": [
+      "All decisions must comply with regulatory and organizational standards",
+      "Changes must be documented and version-controlled",
+      "High-risk deviations require human review"
+    ]
+  },
+  "interfaces": {
+    "upstream": ["Executive Sponsor"],
+    "downstream": ["Process Engineer", "Team Lead", "Frontline Operator"],
+    "systems": [
+      "QualityManagementSystem",
+      "AuditTrackingSystem",
+      "ImprovementPipeline",
+      "DeviationReportingTool",
+      "KnowledgePortal"
+    ]
+  }
+}
