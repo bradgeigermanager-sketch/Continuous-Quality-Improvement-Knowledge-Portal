@@ -1,0 +1,95 @@
+{
+  "roleId": "CIOS-PE-003",
+  "roleName": "Process Engineer / CI Specialist",
+  "summary": "Designs, analyzes, and improves processes using structured CQI methods and data-driven experimentation.",
+  "responsibilities": [
+    "Map current-state and future-state processes using standardized modeling methods",
+    "Lead structured CQI projects using PDCA/PDSA, DMAIC, or equivalent methodologies",
+    "Conduct root-cause analysis using tools such as 5 Whys, Ishikawa diagrams, and fault-tree analysis",
+    "Perform statistical analysis to evaluate process capability, variation, and improvement impact",
+    "Design and validate countermeasures through controlled experiments and pilots",
+    "Collaborate with operators and supervisors to ensure solutions are practical and sustainable",
+    "Document process changes, update standard work, and ensure proper version control",
+    "Maintain the improvement pipeline and ensure project rigor and traceability",
+    "Support digital instrumentation of processes for real-time monitoring and feedback"
+  ],
+  "authorities": [
+    "Define process parameters and capability baselines",
+    "Approve changes to standard work after validation",
+    "Initiate cross-functional improvement projects",
+    "Request audits or deeper investigations into systemic issues"
+  ],
+  "inputs": [
+    "Process maps",
+    "Operational metrics",
+    "Control charts",
+    "Deviation reports",
+    "Improvement suggestions",
+    "Customer feedback",
+    "Historical performance data"
+  ],
+  "outputs": [
+    "Validated countermeasures",
+    "Updated standard work",
+    "Process capability reports",
+    "Root-cause analysis documentation",
+    "Experiment results",
+    "Improvement project charters"
+  ],
+  "metricsOwned": [
+    "Process capability (Cp, Cpk)",
+    "Defect rate reduction",
+    "Lead time reduction",
+    "Stability and variation metrics",
+    "Pilot success rate"
+  ],
+  "decisionRights": [
+    "Selection of analytical methods",
+    "Design of experiments",
+    "Approval of process parameter adjustments",
+    "Escalation of systemic risks to Quality Manager"
+  ],
+  "kaizenCapabilities": [
+    "Facilitation of cross-functional workshops",
+    "Waste elimination strategy design",
+    "Gemba-based observation and analysis"
+  ],
+  "cqiCapabilities": [
+    "Statistical process control",
+    "Root-cause analysis",
+    "Process modeling",
+    "Experimentation and validation",
+    "Data interpretation and reporting"
+  ],
+  "digitalTwinAttributes": {
+    "sensors": [
+      "ProcessFlowSensor",
+      "VariationMonitor",
+      "DefectPatternAnalyzer",
+      "CycleTimeDistributionTracker"
+    ],
+    "actions": [
+      "AdjustProcessParameters",
+      "RunSimulationExperiment",
+      "GenerateCapabilityReport",
+      "DeployCountermeasure",
+      "TriggerRootCauseAnalysis"
+    ],
+    "constraints": [
+      "Changes must be validated before full deployment",
+      "Must comply with quality and safety standards",
+      "Must document all parameter changes and experiments"
+    ]
+  },
+  "interfaces": {
+    "upstream": ["Quality Manager", "Executive Sponsor"],
+    "downstream": ["Team Lead", "Frontline Operator"],
+    "systems": [
+      "ProcessMiningEngine",
+      "StatisticalAnalysisSuite",
+      "ImprovementPipeline",
+      "KnowledgePortal",
+      "DigitalTwinSimulationPlatform"
+    ]
+  }
+}
