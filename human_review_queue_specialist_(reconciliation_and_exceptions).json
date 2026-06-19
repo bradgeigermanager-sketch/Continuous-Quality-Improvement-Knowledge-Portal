@@ -1,0 +1,100 @@
+{
+  "roleId": "CIOS-HRQ-017",
+  "roleName": "Human Review Queue Specialist (Reconciliation & Exceptions)",
+  "summary": "Handles exceptions, ambiguous cases, and high‑risk decisions that require human judgment, ensuring accuracy, compliance, and safe operation of the CI‑OS.",
+  "responsibilities": [
+    "Monitor and manage the human review queue for exceptions, ambiguous cases, and high‑risk deviations",
+    "Review automated workflow outputs that require human validation or override",
+    "Reconcile conflicting data, metrics, or system signals to determine correct outcomes",
+    "Collaborate with Quality Manager, Safety Officer, and Process Engineers on escalated cases",
+    "Document decisions, rationales, and corrective actions for auditability",
+    "Identify patterns in exceptions and recommend system or workflow improvements",
+    "Ensure that human‑review decisions comply with governance, safety, and quality standards",
+    "Support triage of deviations that cannot be automatically classified",
+    "Validate digital‑twin predictions and simulation outputs when human oversight is required",
+    "Provide feedback to Workflow Orchestrator to refine automation logic"
+  ],
+  "authorities": [
+    "Approve or reject automated decisions",
+    "Override workflow outcomes when necessary",
+    "Classify ambiguous deviations",
+    "Escalate high‑risk or unresolved cases",
+    "Request additional data or analysis from other CI‑OS roles"
+  ],
+  "inputs": [
+    "Exception queue entries",
+    "Workflow outputs requiring human validation",
+    "Deviation reports and logs",
+    "Conflicting or incomplete data sets",
+    "Digital‑twin simulation results",
+    "Audit and compliance requirements"
+  ],
+  "outputs": [
+    "Validated decisions",
+    "Exception resolution reports",
+    "Escalation summaries",
+    "Reconciliation documentation",
+    "Recommendations for workflow or system improvements"
+  ],
+  "metricsOwned": [
+    "Exception resolution time",
+    "Accuracy of human‑review decisions",
+    "Escalation frequency",
+    "Reconciliation backlog size",
+    "Repeat‑exception rate"
+  ],
+  "decisionRights": [
+    "Final decision on ambiguous or high‑risk cases",
+    "Authority to override automated classifications",
+    "Escalation of unresolved or systemic issues",
+    "Definition of exception‑handling criteria",
+    "Approval of reconciliation outcomes"
+  ],
+  "kaizenCapabilities": [
+    "Identification of recurring exception patterns",
+    "Support for improvement of automation logic",
+    "Participation in cross‑functional problem‑solving"
+  ],
+  "cqiCapabilities": [
+    "Root‑cause analysis of exception drivers",
+    "Integration of exception metrics into CQI dashboards",
+    "Validation of improvements that reduce exception volume",
+    "Documentation of human‑review insights for governance"
+  ],
+  "digitalTwinAttributes": {
+    "sensors": [
+      "ExceptionPatternDetector",
+      "DecisionConflictMonitor",
+      "AmbiguitySignalTracker",
+      "HumanOverrideFrequencySensor"
+    ],
+    "actions": [
+      "ResolveException",
+      "OverrideDecision",
+      "TriggerEscalation",
+      "PublishReconciliationReport",
+      "UpdateExceptionCriteria"
+    ],
+    "constraints": [
+      "All decisions must be documented for auditability",
+      "Overrides must comply with safety and quality standards",
+      "High‑risk cases require immediate escalation"
+    ]
+  },
+  "interfaces": {
+    "upstream": ["Quality Manager", "Safety & Compliance Officer"],
+    "downstream": [
+      "Workflow Orchestrator",
+      "Process Engineer",
+      "Team Lead",
+      "Data Analyst"
+    ],
+    "systems": [
+      "ExceptionManagementSystem",
+      "WorkflowEngine",
+      "DigitalTwinSimulationPlatform",
+      "AuditTrackingSystem",
+      "KnowledgePortal"
+    ]
+  }
+}
