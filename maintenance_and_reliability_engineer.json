@@ -1,0 +1,100 @@
+{
+  "roleId": "CIOS-MRE-014",
+  "roleName": "Maintenance & Reliability Engineer",
+  "summary": "Ensures equipment, systems, and infrastructure operate reliably, safely, and efficiently to support continuous flow and CI‑OS performance.",
+  "responsibilities": [
+    "Develop and maintain preventive and predictive maintenance programs",
+    "Analyze equipment performance, failure modes, and reliability trends",
+    "Collaborate with Process Engineers to ensure equipment supports process capability requirements",
+    "Conduct root-cause analysis for equipment failures and chronic issues",
+    "Implement reliability-centered maintenance (RCM) and condition-based monitoring strategies",
+    "Maintain asset hierarchies, maintenance records, and equipment documentation",
+    "Support digital instrumentation of equipment for telemetry and predictive analytics",
+    "Coordinate maintenance schedules to minimize downtime and protect flow",
+    "Ensure maintenance activities comply with safety, quality, and regulatory standards",
+    "Participate in improvement projects involving equipment upgrades or redesign"
+  ],
+  "authorities": [
+    "Define maintenance standards and schedules",
+    "Approve equipment-related process changes",
+    "Authorize equipment shutdowns for safety or reliability concerns",
+    "Specify instrumentation and sensor requirements",
+    "Escalate systemic equipment risks to leadership"
+  ],
+  "inputs": [
+    "Equipment telemetry and sensor data",
+    "Maintenance logs and work orders",
+    "Failure mode and effects analysis (FMEA)",
+    "Process capability requirements",
+    "Safety and compliance guidelines",
+    "Digital-twin simulation outputs"
+  ],
+  "outputs": [
+    "Maintenance plans and schedules",
+    "Reliability reports",
+    "Root-cause analysis documentation",
+    "Equipment upgrade recommendations",
+    "Condition monitoring dashboards",
+    "Corrective and preventive action plans"
+  ],
+  "metricsOwned": [
+    "Mean Time Between Failures (MTBF)",
+    "Mean Time To Repair (MTTR)",
+    "Equipment uptime",
+    "Maintenance schedule adherence",
+    "Condition monitoring accuracy"
+  ],
+  "decisionRights": [
+    "Definition of maintenance intervals",
+    "Approval of equipment modifications",
+    "Prioritization of maintenance activities",
+    "Selection of reliability tools and technologies",
+    "Escalation of equipment-related risks"
+  ],
+  "kaizenCapabilities": [
+    "Identification of equipment-related waste",
+    "Support for frontline maintenance improvements",
+    "Participation in gemba walks with a reliability focus"
+  ],
+  "cqiCapabilities": [
+    "Failure analysis and reliability modeling",
+    "Integration of equipment metrics into CQI dashboards",
+    "Validation of equipment-related improvements",
+    "Predictive maintenance analytics"
+  ],
+  "digitalTwinAttributes": {
+    "sensors": [
+      "VibrationMonitor",
+      "ThermalLoadSensor",
+      "FailurePatternAnalyzer",
+      "EquipmentHealthIndexTracker"
+    ],
+    "actions": [
+      "TriggerMaintenanceEvent",
+      "UpdateEquipmentModel",
+      "PublishReliabilityReport",
+      "InitiateRootCauseAnalysis",
+      "AdjustMaintenanceSchedule"
+    ],
+    "constraints": [
+      "Maintenance actions must comply with safety and regulatory standards",
+      "Equipment shutdowns require documented justification",
+      "All changes must be logged and version-controlled"
+    ]
+  },
+  "interfaces": {
+    "upstream": ["Safety & Compliance Officer", "Process Engineer"],
+    "downstream": [
+      "Team Lead",
+      "Frontline Operator",
+      "Workflow Orchestrator"
+    ],
+    "systems": [
+      "MaintenanceManagementSystem",
+      "OperationalDashboard",
+      "ProcessMiningPlatform",
+      "DigitalTwinSimulationPlatform",
+      "KnowledgePortal"
+    ]
+  }
+}
