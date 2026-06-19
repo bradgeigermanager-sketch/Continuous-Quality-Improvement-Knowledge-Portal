@@ -1,0 +1,102 @@
+{
+  "roleId": "CIOS-ITOT-015",
+  "roleName": "IT/OT Systems Administrator",
+  "summary": "Maintains the technical infrastructure that supports CI‑OS operations, ensuring secure, reliable, and high‑performance IT and OT environments.",
+  "responsibilities": [
+    "Administer IT and OT systems that support CI‑OS workflows, dashboards, automation, and digital twins",
+    "Ensure system uptime, network reliability, and secure access control across all CI‑OS components",
+    "Manage servers, databases, edge devices, and operational technology interfaces",
+    "Monitor system performance, logs, and telemetry to detect anomalies or failures",
+    "Implement cybersecurity controls, patches, and vulnerability mitigation strategies",
+    "Collaborate with the CI‑OS Architect to deploy integrations, APIs, and data pipelines",
+    "Maintain backup, recovery, and business continuity plans",
+    "Support deployment of sensors, IoT devices, and telemetry instrumentation",
+    "Ensure compliance with IT, OT, and data governance standards",
+    "Document system configurations, changes, and operational procedures"
+  ],
+  "authorities": [
+    "Configure and maintain IT/OT infrastructure",
+    "Define access control rules and permissions",
+    "Approve system-level updates and patches",
+    "Suspend or isolate compromised systems",
+    "Escalate cybersecurity or infrastructure risks"
+  ],
+  "inputs": [
+    "System logs and telemetry",
+    "Network performance data",
+    "Security alerts and vulnerability reports",
+    "Integration requirements from CI‑OS Architect",
+    "Operational and quality system feedback",
+    "Digital-twin infrastructure requirements"
+  ],
+  "outputs": [
+    "System performance reports",
+    "Access control configurations",
+    "Security incident reports",
+    "Infrastructure updates",
+    "Backup and recovery logs",
+    "Operational readiness assessments"
+  ],
+  "metricsOwned": [
+    "System uptime",
+    "Network reliability",
+    "Security incident frequency",
+    "Patch compliance rate",
+    "Telemetry completeness"
+  ],
+  "decisionRights": [
+    "Approval of infrastructure changes",
+    "Definition of system access policies",
+    "Prioritization of IT/OT maintenance tasks",
+    "Escalation of system-level risks",
+    "Authorization of emergency system interventions"
+  ],
+  "kaizenCapabilities": [
+    "Identification of digital waste and inefficiencies",
+    "Support for automation and workflow improvements",
+    "Optimization of system performance and reliability"
+  ],
+  "cqiCapabilities": [
+    "Instrumentation of systems for CQI metrics",
+    "Root-cause analysis of system failures",
+    "Integration of IT/OT data into CQI dashboards",
+    "Validation of digital improvements"
+  ],
+  "digitalTwinAttributes": {
+    "sensors": [
+      "SystemHealthMonitor",
+      "NetworkLatencyTracker",
+      "SecurityThreatDetector",
+      "TelemetryIntegritySensor"
+    ],
+    "actions": [
+      "DeployPatch",
+      "ReconfigureSystem",
+      "TriggerSecurityIsolation",
+      "UpdateAccessControl",
+      "PublishSystemStatus"
+    ],
+    "constraints": [
+      "All changes must comply with cybersecurity and governance standards",
+      "System downtime must be minimized and documented",
+      "Access control changes require audit logging"
+    ]
+  },
+  "interfaces": {
+    "upstream": ["CI‑OS Architect", "Safety & Compliance Officer"],
+    "downstream": [
+      "Workflow Orchestrator",
+      "Process Engineer",
+      "Data Analyst",
+      "Digital Twin Simulation Controller"
+    ],
+    "systems": [
+      "ITInfrastructurePlatform",
+      "OTControlSystems",
+      "SecurityMonitoringSystem",
+      "OperationalDashboard",
+      "DigitalTwinSimulationPlatform",
+      "KnowledgePortal"
+    ]
+  }
+}
