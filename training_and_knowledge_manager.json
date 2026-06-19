@@ -1,0 +1,98 @@
+{
+  "roleId": "CIOS-TKM-009",
+  "roleName": "Training & Knowledge Manager",
+  "summary": "Maintains organizational knowledge, develops training systems, and ensures that CI‑OS standards, skills, and best practices are consistently learned and applied.",
+  "responsibilities": [
+    "Develop and maintain training programs for all CI‑OS roles, including onboarding, upskilling, and certification pathways",
+    "Manage the Knowledge Portal structure, metadata, templates, and document libraries",
+    "Ensure all standard work, SOPs, and CI‑OS materials are version-controlled and accessible",
+    "Collaborate with Process Engineers and Quality Managers to update training after process changes",
+    "Conduct training needs assessments and competency gap analyses",
+    "Facilitate learning sessions, workshops, and simulations for improvement methodologies",
+    "Ensure knowledge retention through assessments, refreshers, and spaced repetition",
+    "Maintain taxonomies, controlled vocabularies, and tagging standards for the Knowledge Portal",
+    "Support digital-twin training scenarios and simulation-based learning",
+    "Track training completion, competency progression, and certification status"
+  ],
+  "authorities": [
+    "Define training standards and competency frameworks",
+    "Approve updates to training materials and knowledge assets",
+    "Assign required training for specific roles or processes",
+    "Control access to sensitive or advanced training modules",
+    "Publish and archive official CI‑OS documentation"
+  ],
+  "inputs": [
+    "Process changes and updated SOPs",
+    "Improvement project outcomes",
+    "Audit findings and corrective actions",
+    "Competency assessments",
+    "User feedback on training effectiveness",
+    "Digital-twin simulation data"
+  ],
+  "outputs": [
+    "Training modules and curricula",
+    "Knowledge Portal updates",
+    "Competency maps",
+    "Certification records",
+    "Learning analytics reports",
+    "Updated templates and standards"
+  ],
+  "metricsOwned": [
+    "Training completion rate",
+    "Competency attainment score",
+    "Knowledge Portal engagement",
+    "Document version accuracy",
+    "Learning retention metrics"
+  ],
+  "decisionRights": [
+    "Definition of competency requirements for each role",
+    "Approval of training content and delivery methods",
+    "Prioritization of knowledge updates",
+    "Assignment of mandatory training",
+    "Governance of document and template standards"
+  ],
+  "kaizenCapabilities": [
+    "Facilitation of improvement workshops",
+    "Coaching teams on CI‑OS tools and methods",
+    "Support for frontline learning and empowerment"
+  ],
+  "cqiCapabilities": [
+    "Training on PDCA, root-cause analysis, and statistical thinking",
+    "Documentation of improvement lessons learned",
+    "Integration of CQI outcomes into training materials",
+    "Support for audit-driven training updates"
+  ],
+  "digitalTwinAttributes": {
+    "sensors": [
+      "TrainingCompletionMonitor",
+      "CompetencyProgressTracker",
+      "KnowledgePortalUsageSensor",
+      "DocumentVersionIntegrityChecker"
+    ],
+    "actions": [
+      "PublishTrainingModule",
+      "UpdateKnowledgeAsset",
+      "AssignTraining",
+      "TriggerCompetencyAssessment",
+      "ArchiveObsoleteDocument"
+    ],
+    "constraints": [
+      "All training materials must align with controlled documents",
+      "Updates require version control and metadata tagging",
+      "Sensitive materials require role-based access control"
+    ]
+  },
+  "interfaces": {
+    "upstream": ["Quality Manager", "CI‑OS Architect"],
+    "downstream": [
+      "All CI‑OS roles",
+      "Digital Twin Simulation Controller"
+    ],
+    "systems": [
+      "KnowledgePortal",
+      "LearningManagementSystem",
+      "DocumentControlSystem",
+      "DigitalTwinSimulationPlatform"
+    ]
+  }
+}
