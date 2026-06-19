@@ -1,0 +1,100 @@
+{
+  "roleId": "CIOS-CX-013",
+  "roleName": "Customer Experience Liaison",
+  "summary": "Represents the customer’s voice within the CI‑OS, translating customer needs, feedback, and pain points into actionable improvement requirements.",
+  "responsibilities": [
+    "Collect, analyze, and synthesize customer feedback from surveys, support channels, and direct interactions",
+    "Translate customer needs into operational and quality requirements for the CI‑OS",
+    "Collaborate with Product Owners and Process Engineers to ensure improvements enhance customer value",
+    "Monitor customer satisfaction metrics and identify trends or emerging issues",
+    "Participate in root-cause analysis for customer-impacting defects or service failures",
+    "Provide customer-centric insights during PDCA cycles and improvement workshops",
+    "Maintain customer personas, journey maps, and value definitions",
+    "Ensure customer requirements are reflected in standard work, SOPs, and training materials",
+    "Support communication of customer-impacting changes to internal teams",
+    "Validate improvement outcomes through customer feedback loops"
+  ],
+  "authorities": [
+    "Define customer value criteria",
+    "Prioritize customer-impacting improvement opportunities",
+    "Request cross-functional investigations into customer issues",
+    "Approve customer-facing communication related to CI‑OS changes",
+    "Escalate customer-impacting risks to leadership"
+  ],
+  "inputs": [
+    "Customer surveys and NPS data",
+    "Support tickets and complaint logs",
+    "Customer interviews and focus groups",
+    "Value stream performance metrics",
+    "Process mining insights",
+    "Product and service usage data"
+  ],
+  "outputs": [
+    "Customer insights reports",
+    "Customer journey maps",
+    "Customer value requirements",
+    "Feedback loop summaries",
+    "Customer-impacting improvement proposals"
+  ],
+  "metricsOwned": [
+    "Customer satisfaction index",
+    "Net Promoter Score (NPS)",
+    "Customer complaint rate",
+    "Customer-impacting defect frequency",
+    "Customer value realization score"
+  ],
+  "decisionRights": [
+    "Definition of customer value KPIs",
+    "Approval of customer-facing requirements",
+    "Prioritization of customer-driven improvements",
+    "Escalation of customer-impacting risks",
+    "Validation of improvement impact on customer experience"
+  ],
+  "kaizenCapabilities": [
+    "Identification of customer-facing waste and friction",
+    "Support for frontline improvements that enhance customer value",
+    "Participation in value stream mapping with a customer lens"
+  ],
+  "cqiCapabilities": [
+    "Analysis of customer-impacting defects",
+    "Integration of customer metrics into CQI dashboards",
+    "Evidence-based validation of customer-focused improvements",
+    "Support for root-cause analysis of customer issues"
+  ],
+  "digitalTwinAttributes": {
+    "sensors": [
+      "CustomerSentimentMonitor",
+      "ComplaintPatternAnalyzer",
+      "CustomerValueSignalTracker",
+      "ExperienceDeviationSensor"
+    ],
+    "actions": [
+      "PublishCustomerInsight",
+      "TriggerCustomerImpactReview",
+      "UpdateCustomerJourneyMap",
+      "PrioritizeCustomerIssue",
+      "ValidateImprovementOutcome"
+    ],
+    "constraints": [
+      "Customer data must comply with privacy and regulatory standards",
+      "Customer insights must be evidence-based",
+      "Customer-impacting risks require immediate escalation"
+    ]
+  },
+  "interfaces": {
+    "upstream": ["Product Owner / Value Stream Manager", "Executive Sponsor"],
+    "downstream": [
+      "Process Engineer",
+      "Team Lead",
+      "Quality Manager",
+      "Training & Knowledge Manager"
+    ],
+    "systems": [
+      "CustomerFeedbackSystem",
+      "ValueStreamDashboard",
+      "ImprovementPipeline",
+      "KnowledgePortal",
+      "DigitalTwinSimulationPlatform"
+    ]
+  }
+}
