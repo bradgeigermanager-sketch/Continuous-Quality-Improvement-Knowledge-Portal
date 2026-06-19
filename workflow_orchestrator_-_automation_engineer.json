@@ -1,0 +1,95 @@
+{
+  "roleId": "CIOS-WO-008",
+  "roleName": "Workflow Orchestrator / Automation Engineer",
+  "summary": "Designs, automates, and optimizes workflows across the CI‑OS to reduce friction, eliminate waste, and ensure reliable process execution.",
+  "responsibilities": [
+    "Design automated workflows that support CI‑OS processes, including improvement pipelines, deviation handling, and approval flows",
+    "Implement workflow logic using orchestration platforms, low-code tools, or automation engines",
+    "Collaborate with Process Engineers to translate process maps into executable digital workflows",
+    "Monitor workflow performance, latency, and failure rates to ensure reliability",
+    "Automate repetitive tasks and handoffs to reduce waste and improve cycle time",
+    "Integrate workflows with dashboards, data pipelines, and digital-twin systems",
+    "Maintain workflow documentation, version control, and change history",
+    "Ensure workflows comply with quality, safety, and governance standards",
+    "Identify automation opportunities and propose enhancements to CI‑OS leadership",
+    "Support exception handling and escalation logic for human review queues"
+  ],
+  "authorities": [
+    "Deploy and modify automated workflows",
+    "Define workflow logic and routing rules",
+    "Integrate workflows with CI‑OS systems and APIs",
+    "Recommend automation priorities to leadership",
+    "Pause or reroute workflows during incidents or failures"
+  ],
+  "inputs": [
+    "Process maps and SOPs",
+    "Improvement pipeline requirements",
+    "Operational and quality metrics",
+    "User feedback on workflow performance",
+    "System logs and telemetry",
+    "Digital-twin event streams"
+  ],
+  "outputs": [
+    "Automated workflows",
+    "Workflow performance reports",
+    "Exception and escalation events",
+    "Automation scripts and configuration files",
+    "Documentation and version histories"
+  ],
+  "metricsOwned": [
+    "Workflow success rate",
+    "Automation coverage",
+    "Cycle time reduction",
+    "Workflow latency",
+    "Exception frequency"
+  ],
+  "decisionRights": [
+    "Selection of automation tools and orchestration patterns",
+    "Definition of workflow triggers and routing logic",
+    "Approval of workflow-level changes",
+    "Escalation of systemic workflow failures",
+    "Prioritization of automation backlog items"
+  ],
+  "kaizenCapabilities": [
+    "Identification of automation opportunities to eliminate waste",
+    "Support for frontline and supervisor workflow improvements",
+    "Rapid prototyping of workflow enhancements"
+  ],
+  "cqiCapabilities": [
+    "Workflow instrumentation and monitoring",
+    "Root-cause analysis of workflow failures",
+    "Data-driven optimization of process automation",
+    "Integration of CQI metrics into workflow logic"
+  ],
+  "digitalTwinAttributes": {
+    "sensors": [
+      "WorkflowLatencySensor",
+      "AutomationFailureMonitor",
+      "TriggerEventStream",
+      "ExceptionPatternDetector"
+    ],
+    "actions": [
+      "DeployWorkflow",
+      "PauseWorkflow",
+      "RerouteTask",
+      "TriggerEscalation",
+      "UpdateAutomationLogic"
+    ],
+    "constraints": [
+      "All workflows must comply with quality and safety governance",
+      "Automation changes require documentation and version control",
+      "High-risk workflows require Quality Manager approval"
+    ]
+  },
+  "interfaces": {
+    "upstream": ["CI‑OS Architect", "Quality Manager"],
+    "downstream": ["Process Engineer", "Team Lead", "Human Review Queue Specialist"],
+    "systems": [
+      "WorkflowEngine",
+      "OperationalDashboard",
+      "ImprovementPipeline",
+      "DigitalTwinSimulationPlatform",
+      "KnowledgePortal"
+    ]
+  }
+}
