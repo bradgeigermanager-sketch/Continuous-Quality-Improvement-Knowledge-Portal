@@ -1,0 +1,100 @@
+{
+  "roleId": "CIOS-PO-012",
+  "roleName": "Product Owner / Value Stream Manager",
+  "summary": "Owns the value stream end‑to‑end, ensuring that processes, improvements, and digital systems deliver maximum value to customers and the organization.",
+  "responsibilities": [
+    "Define and maintain the value stream vision, goals, and performance targets",
+    "Prioritize improvement initiatives based on customer value, ROI, and strategic alignment",
+    "Collaborate with Process Engineers to map value streams and identify bottlenecks",
+    "Ensure that CI‑OS improvements support flow, quality, and customer satisfaction",
+    "Manage the improvement backlog and coordinate cross-functional execution",
+    "Monitor value stream metrics and lead performance reviews",
+    "Represent customer needs and translate them into operational requirements",
+    "Ensure alignment between digital systems, workflows, and value delivery",
+    "Support pilots, experiments, and phased rollouts across the value stream",
+    "Facilitate collaboration between operations, quality, engineering, and leadership"
+  ],
+  "authorities": [
+    "Set value stream priorities",
+    "Approve improvement backlog items",
+    "Authorize resource allocation within the value stream",
+    "Define customer value metrics",
+    "Escalate systemic issues to executive leadership"
+  ],
+  "inputs": [
+    "Customer feedback and satisfaction data",
+    "Value stream maps",
+    "Operational and quality metrics",
+    "Improvement proposals",
+    "Process mining insights",
+    "Digital system performance data"
+  ],
+  "outputs": [
+    "Value stream performance reports",
+    "Prioritized improvement backlog",
+    "Customer value requirements",
+    "Strategic alignment documents",
+    "Flow optimization plans"
+  ],
+  "metricsOwned": [
+    "End-to-end lead time",
+    "Customer satisfaction index",
+    "Value stream throughput",
+    "Defect rate across the stream",
+    "Improvement backlog velocity"
+  ],
+  "decisionRights": [
+    "Definition of value stream KPIs",
+    "Approval of improvement priorities",
+    "Authorization of cross-functional initiatives",
+    "Escalation of value-impacting risks",
+    "Definition of customer value criteria"
+  ],
+  "kaizenCapabilities": [
+    "Facilitation of value stream mapping workshops",
+    "Identification of waste across functional boundaries",
+    "Support for frontline and team-level improvements"
+  ],
+  "cqiCapabilities": [
+    "Analysis of end-to-end performance",
+    "Integration of CQI metrics into value stream dashboards",
+    "Validation of improvement impact on customer value",
+    "Root-cause analysis for systemic issues"
+  ],
+  "digitalTwinAttributes": {
+    "sensors": [
+      "ValueStreamFlowSensor",
+      "CustomerValueSignalMonitor",
+      "BottleneckDetectionEngine",
+      "ThroughputVariationTracker"
+    ],
+    "actions": [
+      "PrioritizeBacklogItem",
+      "TriggerValueStreamReview",
+      "UpdateValueStreamMap",
+      "AuthorizeCrossFunctionalChange",
+      "PublishCustomerValueRequirements"
+    ],
+    "constraints": [
+      "Decisions must align with organizational strategy",
+      "Customer value must be prioritized over local optimization",
+      "Changes must be coordinated across all affected roles"
+    ]
+  },
+  "interfaces": {
+    "upstream": ["Executive Sponsor"],
+    "downstream": [
+      "Process Engineer",
+      "Team Lead",
+      "Data Analyst",
+      "Workflow Orchestrator"
+    ],
+    "systems": [
+      "ValueStreamDashboard",
+      "ImprovementPipeline",
+      "ProcessMiningPlatform",
+      "KnowledgePortal",
+      "DigitalTwinSimulationPlatform"
+    ]
+  }
+}
