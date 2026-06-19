@@ -1,0 +1,100 @@
+{
+  "roleId": "CIOS-DTSC-018",
+  "roleName": "Digital Twin Simulation Controller",
+  "summary": "Operates, validates, and maintains digital‑twin simulations that model real‑world processes, enabling predictive analysis, scenario testing, and safe experimentation within the CI‑OS.",
+  "responsibilities": [
+    "Configure, run, and monitor digital‑twin simulations for processes, workflows, and equipment",
+    "Validate simulation accuracy by comparing digital outputs with real‑world performance data",
+    "Collaborate with Process Engineers and Data Analysts to design simulation scenarios",
+    "Support predictive modeling for throughput, reliability, quality, and risk assessments",
+    "Document simulation parameters, assumptions, and outcomes for auditability",
+    "Identify discrepancies between digital and physical systems and recommend corrections",
+    "Maintain simulation models, ensuring they reflect current processes and configurations",
+    "Support training scenarios and virtual gemba sessions for CI‑OS roles",
+    "Integrate simulation outputs into dashboards, workflows, and improvement pipelines",
+    "Ensure simulations comply with governance, safety, and data integrity standards"
+  ],
+  "authorities": [
+    "Run and approve simulation scenarios",
+    "Update simulation parameters and models",
+    "Flag discrepancies between digital and physical systems",
+    "Recommend process or system changes based on simulation insights",
+    "Escalate high‑risk simulation findings to leadership"
+  ],
+  "inputs": [
+    "Process maps and SOPs",
+    "Operational telemetry",
+    "Equipment and workflow configurations",
+    "Historical performance data",
+    "Predictive models and analytical insights",
+    "User‑defined simulation scenarios"
+  ],
+  "outputs": [
+    "Simulation results and reports",
+    "Predictive performance insights",
+    "Risk and scenario analyses",
+    "Model update recommendations",
+    "Training simulation packages"
+  ],
+  "metricsOwned": [
+    "Simulation accuracy",
+    "Model update frequency",
+    "Scenario coverage",
+    "Prediction reliability",
+    "Digital‑physical alignment score"
+  ],
+  "decisionRights": [
+    "Approval of simulation configurations",
+    "Definition of scenario parameters",
+    "Escalation of simulation‑identified risks",
+    "Authorization of model updates",
+    "Determination of simulation readiness for training use"
+  ],
+  "kaizenCapabilities": [
+    "Identification of improvement opportunities through scenario testing",
+    "Support for waste elimination via virtual experimentation",
+    "Participation in cross‑functional improvement workshops"
+  ],
+  "cqiCapabilities": [
+    "Predictive analysis for CQI cycles",
+    "Validation of improvement hypotheses",
+    "Integration of simulation metrics into CQI dashboards",
+    "Root‑cause analysis using digital‑twin evidence"
+  ],
+  "digitalTwinAttributes": {
+    "sensors": [
+      "SimulationAccuracyMonitor",
+      "ModelDriftDetector",
+      "ScenarioOutcomeAnalyzer",
+      "DigitalPhysicalAlignmentSensor"
+    ],
+    "actions": [
+      "RunSimulation",
+      "UpdateModel",
+      "PublishSimulationReport",
+      "TriggerScenarioAnalysis",
+      "EscalateSimulationRisk"
+    ],
+    "constraints": [
+      "Simulation assumptions must be documented",
+      "High‑risk findings require immediate escalation",
+      "Models must remain synchronized with real‑world processes"
+    ]
+  },
+  "interfaces": {
+    "upstream": ["CI‑OS Architect", "Process Engineer"],
+    "downstream": [
+      "Training & Knowledge Manager",
+      "Workflow Orchestrator",
+      "Data Analyst",
+      "Human Review Queue Specialist"
+    ],
+    "systems": [
+      "DigitalTwinSimulationPlatform",
+      "OperationalDashboard",
+      "ProcessMiningPlatform",
+      "KnowledgePortal",
+      "ImprovementPipeline"
+    ]
+  }
+}
