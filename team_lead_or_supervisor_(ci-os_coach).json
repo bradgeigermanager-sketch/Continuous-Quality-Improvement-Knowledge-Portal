@@ -1,0 +1,96 @@
+{
+  "roleId": "CIOS-TLS-020",
+  "roleName": "Team Lead / Supervisor (CI‑OS Coach)",
+  "summary": "Leads frontline teams, reinforces CI‑OS behaviors, ensures operational stability, and coaches team members in continuous improvement methods.",
+  "responsibilities": [
+    "Oversee daily operations and ensure adherence to standard work and CI‑OS practices",
+    "Coach frontline operators in CI‑OS tools, problem‑solving, and improvement behaviors",
+    "Monitor team performance metrics and lead daily huddles or tiered meetings",
+    "Identify abnormalities, bottlenecks, and improvement opportunities during gemba walks",
+    "Escalate deviations, safety concerns, and quality issues according to CI‑OS protocols",
+    "Support PDCA cycles, kaizen events, and frontline experiments",
+    "Ensure training completion and competency development for team members",
+    "Collaborate with Process Engineers to validate and implement process changes",
+    "Maintain team schedules, workload balance, and resource availability",
+    "Provide feedback to Workflow Orchestrator, Quality Manager, and Training Manager"
+  ],
+  "authorities": [
+    "Stop work for safety or quality concerns",
+    "Approve minor process adjustments within defined boundaries",
+    "Assign tasks and manage team workload",
+    "Escalate systemic issues to higher‑level roles",
+    "Validate frontline improvement ideas"
+  ],
+  "inputs": [
+    "Operational dashboards",
+    "Standard work instructions",
+    "Training and competency records",
+    "Improvement pipeline tasks",
+    "Safety and quality alerts",
+    "Frontline feedback"
+  ],
+  "outputs": [
+    "Daily performance summaries",
+    "Escalation reports",
+    "Improvement validations",
+    "Team coaching notes",
+    "Updated standard work feedback"
+  ],
+  "metricsOwned": [
+    "Team performance score",
+    "Adherence to standard work",
+    "First‑time quality rate",
+    "Safety compliance",
+    "Improvement participation rate"
+  ],
+  "decisionRights": [
+    "Approval of minor workflow adjustments",
+    "Escalation of abnormalities and risks",
+    "Prioritization of team‑level improvements",
+    "Assignment of training and coaching",
+    "Participation in process change decisions"
+  ],
+  "kaizenCapabilities": [
+    "Facilitation of team‑level kaizen events",
+    "Identification of waste in daily operations",
+    "Support for rapid frontline experiments"
+  ],
+  "cqiCapabilities": [
+    "Integration of team metrics into CQI dashboards",
+    "Root‑cause analysis participation",
+    "Validation of improvement outcomes",
+    "Execution and reinforcement of updated standard work"
+  ],
+  "digitalTwinAttributes": {
+    "sensors": [
+      "TeamPerformanceMonitor",
+      "AbnormalityFlagAggregator",
+      "WorkloadBalanceTracker",
+      "QualityDeviationSensor"
+    ],
+    "actions": [
+      "TriggerTeamHuddle",
+      "EscalateIssue",
+      "ValidateImprovement",
+      "RecordCoachingEvent",
+      "UpdateTeamSchedule"
+    ],
+    "constraints": [
+      "All decisions must align with safety and quality standards",
+      "Escalations must follow CI‑OS governance pathways",
+      "Coaching and training updates must be documented"
+    ]
+  },
+  "interfaces": {
+    "upstream": ["Process Engineer", "Quality Manager", "Product Owner"],
+    "downstream": ["Frontline Operator"],
+    "systems": [
+      "OperationalDashboard",
+      "WorkflowEngine",
+      "ImprovementPipeline",
+      "KnowledgePortal",
+      "SafetyManagementSystem",
+      "LearningManagementSystem"
+    ]
+  }
+}
