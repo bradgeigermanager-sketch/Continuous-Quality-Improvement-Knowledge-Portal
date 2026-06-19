@@ -1,0 +1,95 @@
+{
+  "roleId": "CIOS-DA-007",
+  "roleName": "Data Analyst / Process Mining Specialist",
+  "summary": "Transforms operational data into actionable insights using analytics, visualization, and process mining to support continuous improvement.",
+  "responsibilities": [
+    "Collect, clean, and prepare operational, quality, and workflow data for analysis",
+    "Develop dashboards and visualizations to support decision-making across all CI‑OS roles",
+    "Perform statistical analysis to identify trends, anomalies, and improvement opportunities",
+    "Conduct process mining to map actual process flows and detect bottlenecks or deviations",
+    "Collaborate with Process Engineers to validate hypotheses and quantify improvement impact",
+    "Support Quality Managers with evidence for audits, investigations, and compliance reporting",
+    "Maintain data dictionaries, metadata standards, and controlled vocabularies",
+    "Ensure data integrity, accuracy, and completeness across all CI‑OS systems",
+    "Automate recurring analyses and reporting pipelines",
+    "Provide data-driven insights during PDCA cycles and improvement workshops"
+  ],
+  "authorities": [
+    "Define analytical methods and visualization standards",
+    "Access operational and quality datasets as permitted by governance",
+    "Recommend data instrumentation improvements",
+    "Publish dashboards and analytical reports"
+  ],
+  "inputs": [
+    "Operational telemetry",
+    "Quality metrics",
+    "Process logs",
+    "Workflow event streams",
+    "Digital-twin simulation outputs",
+    "User-generated improvement data"
+  ],
+  "outputs": [
+    "Dashboards and visualizations",
+    "Process mining maps",
+    "Analytical reports",
+    "Anomaly detection alerts",
+    "Data quality assessments",
+    "Predictive insights"
+  ],
+  "metricsOwned": [
+    "Data quality score",
+    "Dashboard usage metrics",
+    "Anomaly detection accuracy",
+    "Process mining completeness",
+    "Reporting cycle time"
+  ],
+  "decisionRights": [
+    "Selection of analytical tools and models",
+    "Definition of data transformation logic",
+    "Prioritization of analytical backlog items",
+    "Recommendations for instrumentation changes"
+  ],
+  "kaizenCapabilities": [
+    "Support for waste identification through data insights",
+    "Visualization of improvement opportunities",
+    "Trend analysis for frontline and supervisor decision-making"
+  ],
+  "cqiCapabilities": [
+    "Statistical analysis",
+    "Process mining",
+    "Root-cause data support",
+    "Predictive modeling",
+    "Evidence-based validation of improvements"
+  ],
+  "digitalTwinAttributes": {
+    "sensors": [
+      "DataIntegrityMonitor",
+      "ProcessFlowEventStream",
+      "AnomalyDetectionEngine",
+      "MetricDriftSensor"
+    ],
+    "actions": [
+      "GenerateProcessMap",
+      "PublishDashboard",
+      "TriggerAnomalyAlert",
+      "RunPredictiveModel",
+      "UpdateDataDictionary"
+    ],
+    "constraints": [
+      "Must comply with data governance and access control policies",
+      "Analytical outputs must be reproducible and documented",
+      "Predictive models must be validated before operational use"
+    ]
+  },
+  "interfaces": {
+    "upstream": ["CI‑OS Architect", "Quality Manager"],
+    "downstream": ["Process Engineer", "Team Lead", "Executive Sponsor"],
+    "systems": [
+      "ProcessMiningPlatform",
+      "OperationalDashboard",
+      "DataWarehouse",
+      "KnowledgePortal",
+      "DigitalTwinSimulationPlatform"
+    ]
+  }
+}
