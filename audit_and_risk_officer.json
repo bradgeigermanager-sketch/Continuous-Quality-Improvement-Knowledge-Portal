@@ -1,0 +1,102 @@
+{
+  "roleId": "CIOS-AR-016",
+  "roleName": "Audit & Risk Officer",
+  "summary": "Ensures CI‑OS processes meet governance, compliance, and risk‑management standards through structured audits, risk assessments, and continuous oversight.",
+  "responsibilities": [
+    "Plan, schedule, and execute internal audits across CI‑OS processes, systems, and roles",
+    "Identify compliance gaps, process deviations, and systemic risks",
+    "Collaborate with Quality Manager and Safety & Compliance Officer on corrective actions",
+    "Maintain the enterprise risk register and ensure risks are properly classified and mitigated",
+    "Conduct risk assessments for new processes, digital systems, and improvement initiatives",
+    "Verify that corrective and preventive actions (CAPA) are implemented and effective",
+    "Ensure audit trails, documentation, and governance artifacts are complete and accurate",
+    "Support regulatory audits and external compliance reviews",
+    "Monitor risk indicators and escalate emerging threats to leadership",
+    "Provide guidance on risk‑based decision‑making and governance best practices"
+  ],
+  "authorities": [
+    "Define audit scope and methodology",
+    "Access all CI‑OS records, logs, and documentation",
+    "Classify risks and assign severity levels",
+    "Mandate corrective actions for high‑risk findings",
+    "Escalate critical risks to the Executive Sponsor"
+  ],
+  "inputs": [
+    "Audit logs and system telemetry",
+    "Process documentation and SOPs",
+    "Risk indicators and performance metrics",
+    "Incident reports and deviation logs",
+    "Regulatory and compliance requirements",
+    "Digital‑twin simulation risk outputs"
+  ],
+  "outputs": [
+    "Audit reports",
+    "Risk assessments",
+    "Corrective action recommendations",
+    "Governance compliance summaries",
+    "Updated risk register entries",
+    "Follow‑up verification reports"
+  ],
+  "metricsOwned": [
+    "Audit completion rate",
+    "Risk mitigation cycle time",
+    "Compliance score",
+    "CAPA effectiveness rate",
+    "Risk severity distribution"
+  ],
+  "decisionRights": [
+    "Definition of audit criteria and risk thresholds",
+    "Approval of risk classifications",
+    "Escalation of governance or compliance failures",
+    "Authorization of follow‑up audits",
+    "Determination of CAPA adequacy"
+  ],
+  "kaizenCapabilities": [
+    "Identification of governance‑related waste and inefficiencies",
+    "Support for improvement teams in risk‑aware decision‑making",
+    "Coaching on compliance‑aligned improvement practices"
+  ],
+  "cqiCapabilities": [
+    "Integration of risk metrics into CQI dashboards",
+    "Root‑cause analysis for systemic governance issues",
+    "Validation of CAPA effectiveness",
+    "Risk‑based prioritization of improvement initiatives"
+  ],
+  "digitalTwinAttributes": {
+    "sensors": [
+      "RiskSignalAggregator",
+      "ComplianceDeviationDetector",
+      "AuditTrailIntegrityMonitor",
+      "GovernanceHealthIndexTracker"
+    ],
+    "actions": [
+      "TriggerAudit",
+      "PublishRiskAssessment",
+      "UpdateRiskRegister",
+      "MandateCorrectiveAction",
+      "EscalateCriticalRisk"
+    ],
+    "constraints": [
+      "All findings must be evidence‑based and documented",
+      "Risk classifications must follow governance standards",
+      "Critical risks require immediate escalation"
+    ]
+  },
+  "interfaces": {
+    "upstream": ["Executive Sponsor"],
+    "downstream": [
+      "Quality Manager",
+      "Safety & Compliance Officer",
+      "Process Engineer",
+      "Workflow Orchestrator"
+    ],
+    "systems": [
+      "AuditTrackingSystem",
+      "RiskManagementSystem",
+      "QualityManagementSystem",
+      "OperationalDashboard",
+      "DigitalTwinSimulationPlatform",
+      "KnowledgePortal"
+    ]
+  }
+}
