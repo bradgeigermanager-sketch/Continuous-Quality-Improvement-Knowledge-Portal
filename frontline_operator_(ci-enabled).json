@@ -1,0 +1,95 @@
+{
+  "roleId": "CIOS-FLO-019",
+  "roleName": "Frontline Operator (CI‑Enabled)",
+  "summary": "Executes daily work using CI‑OS standards, provides real‑time feedback, identifies waste, and participates actively in continuous improvement cycles.",
+  "responsibilities": [
+    "Perform operational tasks according to standard work, SOPs, and CI‑OS guidelines",
+    "Identify defects, delays, safety risks, or process abnormalities during daily work",
+    "Submit improvement ideas, deviation reports, and frontline insights into the CI‑OS pipeline",
+    "Participate in PDCA cycles, kaizen events, and problem‑solving sessions",
+    "Use digital tools, dashboards, and workflow systems to record work and flag issues",
+    "Collaborate with Team Leads and Process Engineers to validate improvement opportunities",
+    "Support data collection, measurement, and frontline experimentation",
+    "Maintain equipment, tools, and work areas according to 5S and safety standards",
+    "Provide feedback on training materials, workflows, and digital tools",
+    "Ensure adherence to quality, safety, and compliance requirements"
+  ],
+  "authorities": [
+    "Stop work for safety or quality concerns",
+    "Escalate abnormalities or deviations",
+    "Propose improvement ideas",
+    "Request clarification on unclear standards",
+    "Participate in improvement decision‑making"
+  ],
+  "inputs": [
+    "Standard work instructions",
+    "Operational dashboards",
+    "Equipment and workflow configurations",
+    "Training materials",
+    "Improvement pipeline tasks",
+    "Safety and quality alerts"
+  ],
+  "outputs": [
+    "Completed work records",
+    "Deviation reports",
+    "Improvement suggestions",
+    "Frontline feedback",
+    "Data for CQI metrics"
+  ],
+  "metricsOwned": [
+    "Adherence to standard work",
+    "First‑time quality rate",
+    "Safety compliance",
+    "Improvement participation",
+    "Cycle time consistency"
+  ],
+  "decisionRights": [
+    "Authority to stop unsafe or non‑conforming work",
+    "Escalation of abnormalities",
+    "Input into improvement prioritization",
+    "Feedback on workflow and training updates",
+    "Participation in root‑cause analysis"
+  ],
+  "kaizenCapabilities": [
+    "Identification of waste in daily work",
+    "Participation in kaizen events",
+    "Support for rapid experiments and trials"
+  ],
+  "cqiCapabilities": [
+    "Data collection for CQI metrics",
+    "Frontline validation of improvements",
+    "Contribution to root‑cause analysis",
+    "Execution of updated standard work"
+  ],
+  "digitalTwinAttributes": {
+    "sensors": [
+      "WorkCompletionSignal",
+      "AbnormalityFlagSensor",
+      "CycleTimeTracker",
+      "QualityDeviationReporter"
+    ],
+    "actions": [
+      "SubmitImprovementIdea",
+      "FlagAbnormality",
+      "RecordWorkEvent",
+      "TriggerEscalation",
+      "AcknowledgeTrainingUpdate"
+    ],
+    "constraints": [
+      "All work must follow approved standard work",
+      "Safety and quality take precedence over speed",
+      "Abnormalities must be escalated immediately"
+    ]
+  },
+  "interfaces": {
+    "upstream": ["Team Lead", "Process Engineer"],
+    "downstream": [],
+    "systems": [
+      "OperationalDashboard",
+      "WorkflowEngine",
+      "ImprovementPipeline",
+      "KnowledgePortal",
+      "SafetyManagementSystem"
+    ]
+  }
+}
