@@ -1,0 +1,101 @@
+{
+  "roleId": "CIOS-CM-010",
+  "roleName": "Change Management Lead",
+  "summary": "Guides the human, organizational, and communication aspects of change to ensure improvements are adopted, sustained, and aligned with CI‑OS strategy.",
+  "responsibilities": [
+    "Develop and execute change management strategies for CI‑OS initiatives, process updates, and system deployments",
+    "Assess organizational readiness and identify adoption risks or resistance points",
+    "Create communication plans, stakeholder maps, and engagement strategies",
+    "Facilitate cross-functional alignment and ensure all impacted roles understand upcoming changes",
+    "Collaborate with Training & Knowledge Manager to ensure learning materials reflect new processes",
+    "Monitor adoption metrics, feedback, and behavioral indicators to ensure sustained change",
+    "Support leaders in reinforcing continuous improvement culture and behaviors",
+    "Manage change impact assessments and ensure proper documentation",
+    "Coordinate pilot rollouts, phased deployments, and feedback loops",
+    "Ensure changes comply with governance, quality, and safety standards"
+  ],
+  "authorities": [
+    "Define change management requirements for major initiatives",
+    "Approve communication and engagement plans",
+    "Recommend go/no-go decisions for change rollouts",
+    "Escalate adoption risks to leadership",
+    "Define stakeholder engagement strategies"
+  ],
+  "inputs": [
+    "Process change proposals",
+    "Improvement project documentation",
+    "Stakeholder feedback",
+    "Training materials",
+    "Organizational readiness assessments",
+    "Risk and impact analyses"
+  ],
+  "outputs": [
+    "Change management plans",
+    "Communication materials",
+    "Stakeholder engagement reports",
+    "Adoption metrics",
+    "Readiness assessments",
+    "Post-implementation reviews"
+  ],
+  "metricsOwned": [
+    "Adoption rate",
+    "Stakeholder engagement score",
+    "Change readiness index",
+    "Sustainment rate of improvements",
+    "Communication effectiveness metrics"
+  ],
+  "decisionRights": [
+    "Definition of change adoption criteria",
+    "Approval of communication strategies",
+    "Prioritization of stakeholder engagement activities",
+    "Escalation of change-related risks",
+    "Recommendation of rollout sequencing"
+  ],
+  "kaizenCapabilities": [
+    "Facilitation of team-based change discussions",
+    "Coaching on improvement behaviors",
+    "Support for cultural reinforcement"
+  ],
+  "cqiCapabilities": [
+    "Integration of change management into CQI project cycles",
+    "Measurement of behavioral outcomes",
+    "Support for evidence-based adoption strategies",
+    "Documentation of change impacts"
+  ],
+  "digitalTwinAttributes": {
+    "sensors": [
+      "AdoptionRateMonitor",
+      "StakeholderSentimentAnalyzer",
+      "ReadinessSignalTracker",
+      "CommunicationReachSensor"
+    ],
+    "actions": [
+      "PublishChangeAnnouncement",
+      "TriggerStakeholderEngagement",
+      "UpdateChangePlan",
+      "RunAdoptionAssessment",
+      "EscalateChangeRisk"
+    ],
+    "constraints": [
+      "All changes must align with governance and quality standards",
+      "Communication must be consistent with approved messaging",
+      "Adoption risks must be documented and escalated"
+    ]
+  },
+  "interfaces": {
+    "upstream": ["Executive Sponsor", "Quality Manager"],
+    "downstream": [
+      "Training & Knowledge Manager",
+      "Team Lead",
+      "Process Engineer",
+      "Frontline Operator"
+    ],
+    "systems": [
+      "KnowledgePortal",
+      "CommunicationPlatform",
+      "ImprovementPipeline",
+      "LearningManagementSystem",
+      "DigitalTwinSimulationPlatform"
+    ]
+  }
+}
