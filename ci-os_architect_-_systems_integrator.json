@@ -1,0 +1,98 @@
+{
+  "roleId": "CIOS-ARCH-005",
+  "roleName": "CI‑OS Architect / Systems Integrator",
+  "summary": "Designs and maintains the digital backbone of the CI‑OS, integrating data, workflows, dashboards, and knowledge systems into a coherent operational ecosystem.",
+  "responsibilities": [
+    "Design and maintain the architecture of the Continuous Improvement Operating System (CI‑OS)",
+    "Integrate digital systems including dashboards, workflow engines, process mining tools, and knowledge portals",
+    "Ensure interoperability between human workflows and digital systems",
+    "Develop and maintain APIs, data pipelines, and event-driven integrations",
+    "Implement real-time monitoring and feedback loops for operational processes",
+    "Manage digital-twin infrastructure and simulation environments",
+    "Ensure system scalability, reliability, and security",
+    "Collaborate with Process Engineers and Quality Managers to digitize process parameters and metrics",
+    "Maintain metadata standards, taxonomies, and controlled vocabularies across the CI‑OS",
+    "Oversee version control, configuration management, and system documentation"
+  ],
+  "authorities": [
+    "Define system architecture and integration standards",
+    "Approve digital instrumentation and telemetry configurations",
+    "Modify or deploy CI‑OS components and services",
+    "Set access control policies in collaboration with Quality and Security",
+    "Prioritize digital enhancements and automation opportunities"
+  ],
+  "inputs": [
+    "Process maps and workflows",
+    "Operational and quality metrics",
+    "User requirements from all CI‑OS roles",
+    "System logs and telemetry",
+    "Digital-twin simulation data",
+    "Knowledge portal content and metadata"
+  ],
+  "outputs": [
+    "Integrated dashboards",
+    "Workflow automations",
+    "API endpoints and data pipelines",
+    "Digital-twin models",
+    "System architecture documentation",
+    "Operational telemetry streams",
+    "Knowledge portal updates"
+  ],
+  "metricsOwned": [
+    "System uptime",
+    "Data pipeline reliability",
+    "Telemetry completeness",
+    "Workflow automation success rate",
+    "Knowledge portal usage metrics"
+  ],
+  "decisionRights": [
+    "Selection of digital tools and platforms",
+    "Definition of integration patterns",
+    "Approval of system-level changes",
+    "Prioritization of digital transformation initiatives",
+    "Governance of metadata and taxonomies"
+  ],
+  "kaizenCapabilities": [
+    "Digitization of improvement workflows",
+    "Automation of waste-reduction opportunities",
+    "Support for frontline and engineering digital tools"
+  ],
+  "cqiCapabilities": [
+    "Real-time metric instrumentation",
+    "Process mining and analytics",
+    "Digital validation of improvement outcomes",
+    "Simulation-based scenario testing"
+  ],
+  "digitalTwinAttributes": {
+    "sensors": [
+      "SystemHealthMonitor",
+      "DataFlowIntegritySensor",
+      "WorkflowLatencyTracker",
+      "TelemetryCompletenessScanner"
+    ],
+    "actions": [
+      "DeployIntegration",
+      "UpdateDigitalTwinModel",
+      "TriggerSystemAlert",
+      "ReconfigureWorkflow",
+      "PublishAPISchema"
+    ],
+    "constraints": [
+      "Changes must maintain system stability",
+      "Security and access control must be preserved",
+      "All integrations must be documented and version-controlled"
+    ]
+  },
+  "interfaces": {
+    "upstream": ["Executive Sponsor", "Quality Manager"],
+    "downstream": ["Process Engineer", "Team Lead", "Digital Twin Simulation Controller"],
+    "systems": [
+      "KnowledgePortal",
+      "WorkflowEngine",
+      "ProcessMiningPlatform",
+      "OperationalDashboard",
+      "DigitalTwinSimulationPlatform",
+      "AuditAndComplianceSystem"
+    ]
+  }
+}
