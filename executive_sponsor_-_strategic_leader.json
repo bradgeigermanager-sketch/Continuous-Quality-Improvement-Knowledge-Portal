@@ -1,0 +1,100 @@
+{
+  "roleId": "CIOS-EXEC-006",
+  "roleName": "Executive Sponsor / Strategic Leader",
+  "summary": "Sets strategic direction, allocates resources, and reinforces the cultural and operational foundations of continuous improvement.",
+  "responsibilities": [
+    "Define the strategic priorities and long-term vision for the CI‑OS",
+    "Allocate resources, funding, and staffing for improvement initiatives",
+    "Remove systemic barriers that impede improvement or operational flow",
+    "Review and approve high-impact CQI projects and major process changes",
+    "Champion continuous improvement culture across the organization",
+    "Participate in gemba walks and improvement reviews to model leadership engagement",
+    "Ensure alignment between CI‑OS activities and organizational goals",
+    "Monitor enterprise-level performance metrics and risk indicators",
+    "Sponsor cross-functional collaboration and break down organizational silos",
+    "Support digital transformation and modernization of operational systems"
+  ],
+  "authorities": [
+    "Approve major improvement initiatives and capital investments",
+    "Set organizational performance targets and quality expectations",
+    "Authorize cross-functional resource allocation",
+    "Escalate or resolve enterprise-level risks",
+    "Mandate compliance with CI‑OS governance standards"
+  ],
+  "inputs": [
+    "Enterprise performance dashboards",
+    "Quality and risk reports",
+    "Improvement project portfolios",
+    "Customer satisfaction and market feedback",
+    "Regulatory and compliance updates",
+    "Strategic planning documents"
+  ],
+  "outputs": [
+    "Strategic directives",
+    "Resource allocation decisions",
+    "Executive-level performance reviews",
+    "Risk mitigation plans",
+    "Organizational improvement priorities",
+    "Leadership communications"
+  ],
+  "metricsOwned": [
+    "Enterprise operational performance",
+    "Customer satisfaction index",
+    "Strategic initiative success rate",
+    "Cross-functional alignment score",
+    "Organizational improvement velocity"
+  ],
+  "decisionRights": [
+    "Approval of enterprise-level changes",
+    "Prioritization of improvement portfolios",
+    "Definition of organizational KPIs",
+    "Authorization of major investments",
+    "Resolution of cross-functional conflicts"
+  ],
+  "kaizenCapabilities": [
+    "Cultural reinforcement of continuous improvement",
+    "Leadership participation in gemba and improvement reviews",
+    "Support for frontline empowerment"
+  ],
+  "cqiCapabilities": [
+    "Interpretation of enterprise-level metrics",
+    "Governance oversight",
+    "Risk-based decision-making",
+    "Evaluation of improvement ROI"
+  ],
+  "digitalTwinAttributes": {
+    "sensors": [
+      "EnterprisePerformanceMonitor",
+      "RiskSignalAggregator",
+      "StrategicAlignmentTracker",
+      "ImprovementVelocitySensor"
+    ],
+    "actions": [
+      "IssueStrategicDirective",
+      "AllocateResources",
+      "AuthorizeMajorChange",
+      "TriggerEnterpriseRiskReview",
+      "ApproveImprovementPortfolio"
+    ],
+    "constraints": [
+      "Decisions must align with organizational mission and compliance standards",
+      "Strategic changes require cross-functional consultation",
+      "Resource allocation must support long-term sustainability"
+    ]
+  },
+  "interfaces": {
+    "upstream": [],
+    "downstream": [
+      "Quality Manager",
+      "CI‑OS Architect",
+      "Process Engineer",
+      "Team Lead"
+    ],
+    "systems": [
+      "EnterpriseDashboard",
+      "RiskManagementSystem",
+      "ImprovementPortfolioManager",
+      "KnowledgePortal"
+    ]
+  }
+}
