@@ -1,0 +1,101 @@
+{
+  "roleId": "CIOS-SC-011",
+  "roleName": "Safety & Compliance Officer",
+  "summary": "Ensures all CI‑OS activities comply with safety, regulatory, and organizational standards while proactively identifying and mitigating operational risks.",
+  "responsibilities": [
+    "Develop, maintain, and enforce safety and compliance policies across all CI‑OS processes",
+    "Conduct safety audits, compliance inspections, and risk assessments",
+    "Investigate safety incidents, near misses, and nonconformities",
+    "Collaborate with Process Engineers to ensure process changes meet safety and compliance requirements",
+    "Monitor regulatory updates and ensure organizational alignment with new standards",
+    "Maintain safety training materials in partnership with the Training & Knowledge Manager",
+    "Track and analyze safety metrics, incident trends, and compliance performance",
+    "Approve safety-critical changes and ensure proper documentation",
+    "Lead emergency response planning and drills",
+    "Ensure safe integration of automation, digital systems, and digital-twin simulations"
+  ],
+  "authorities": [
+    "Suspend operations in case of safety-critical risks",
+    "Approve or reject process changes based on safety impact",
+    "Define safety standards and compliance thresholds",
+    "Initiate formal investigations into safety incidents",
+    "Mandate corrective and preventive actions"
+  ],
+  "inputs": [
+    "Incident reports",
+    "Audit findings",
+    "Process change proposals",
+    "Regulatory updates",
+    "Safety training records",
+    "Operational telemetry and alerts"
+  ],
+  "outputs": [
+    "Safety audit reports",
+    "Corrective action plans",
+    "Compliance certifications",
+    "Risk assessments",
+    "Incident investigation reports",
+    "Updated safety standards"
+  ],
+  "metricsOwned": [
+    "Incident rate",
+    "Near-miss frequency",
+    "Compliance score",
+    "Corrective action closure time",
+    "Safety training completion rate"
+  ],
+  "decisionRights": [
+    "Approval of safety-critical changes",
+    "Definition of safety protocols",
+    "Escalation of compliance risks",
+    "Authorization of emergency responses",
+    "Classification of incident severity"
+  ],
+  "kaizenCapabilities": [
+    "Identification of safety-related waste and hazards",
+    "Coaching teams on safe improvement practices",
+    "Participation in gemba walks with a safety lens"
+  ],
+  "cqiCapabilities": [
+    "Root-cause analysis for safety incidents",
+    "Risk-based decision-making",
+    "Integration of safety metrics into CQI cycles",
+    "Evidence-based validation of safety improvements"
+  ],
+  "digitalTwinAttributes": {
+    "sensors": [
+      "HazardDetectionSensor",
+      "ComplianceStatusMonitor",
+      "IncidentPatternAnalyzer",
+      "RiskSignalAggregator"
+    ],
+    "actions": [
+      "TriggerSafetyStop",
+      "ApproveSafetyChange",
+      "InitiateIncidentInvestigation",
+      "PublishSafetyAlert",
+      "UpdateSafetyProtocol"
+    ],
+    "constraints": [
+      "All safety decisions must comply with regulatory standards",
+      "Incident investigations must be documented and traceable",
+      "Safety overrides take precedence over operational efficiency"
+    ]
+  },
+  "interfaces": {
+    "upstream": ["Executive Sponsor", "Quality Manager"],
+    "downstream": [
+      "Process Engineer",
+      "Team Lead",
+      "Frontline Operator",
+      "Training & Knowledge Manager"
+    ],
+    "systems": [
+      "SafetyManagementSystem",
+      "AuditTrackingSystem",
+      "IncidentReportingTool",
+      "KnowledgePortal",
+      "DigitalTwinSimulationPlatform"
+    ]
+  }
+}
