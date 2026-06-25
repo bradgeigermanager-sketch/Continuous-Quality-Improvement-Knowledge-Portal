@@ -1,0 +1,529 @@
+{
+  "engine": {
+    "name": "NGODE-CIOS-Simulation-Engine",
+    "version": "1.0.0",
+    "tickIntervalMs": 1000
+  },
+  "telemetryModel": {
+    "primarygoalintegrity": 1.0,
+    "negativegoalactivation": 0.0,
+    "conflict_index": 0.0,
+    "predictedpositivegoal_harm": 0.0,
+    "override_probability": 0.0,
+    "violation_severity": "NoViolation",
+    "operational_tempo": 0.0,
+    "resource_utilization": 0.0,
+    "coordination_load": 0.0,
+    "environmental_volatility": 0.0,
+    "drift_momentum": 0.0,
+    "cognitive_load": 0.0,
+    "system_latency": 0.0,
+    "trust_degradation": 0.0,
+    "alignment_dissonance": 0.0,
+    "systemic_risk_index": 0.0
+  },
+  "channels": [
+    {
+      "id": "IntegrityChannel",
+      "sourceField": "primarygoalintegrity",
+      "fireWhen": { "mode": "THRESHOLD", "operator": "<", "threshold": 0.85 },
+      "description": "Fires when positive-goal integrity weakens below acceptable bounds."
+    },
+    {
+      "id": "EscalationChannel",
+      "sourceField": "negativegoalactivation",
+      "fireWhen": { "mode": "THRESHOLD", "operator": ">", "threshold": 0.40 },
+      "description": "Fires when negative-goal pursuit becomes abnormally strong."
+    },
+    {
+      "id": "ContradictionChannel",
+      "sourceField": "conflict_index",
+      "fireWhen": { "mode": "THRESHOLD", "operator": ">", "threshold": 0.30 },
+      "description": "Fires when predicted outcomes show conflict between positive and negative goals."
+    },
+    {
+      "id": "HarmForecastChannel",
+      "sourceField": "predictedpositivegoal_harm",
+      "fireWhen": { "mode": "THRESHOLD", "operator": ">", "threshold": 0.25 },
+      "description": "Fires when predicted harm to protected positive goals exceeds safe limits."
+    },
+    {
+      "id": "InversionRiskChannel",
+      "sourceField": "override_probability",
+      "fireWhen": { "mode": "THRESHOLD", "operator": ">", "threshold": 0.20 },
+      "description": "Fires when the probability of goal-priority inversion becomes significant."
+    },
+    {
+      "id": "VerdictChannel",
+      "sourceField": "violation_severity",
+      "fireWhen": { "mode": "ALWAYS" },
+      "description": "Broadcast channel that fires every tick with the NGODE verdict."
+    },
+    {
+      "id": "TempoChannel",
+      "sourceField": "operational_tempo",
+      "fireWhen": { "mode": "THRESHOLD", "operator": ">", "threshold": 0.70 },
+      "description": "Fires when operational tempo exceeds sustainable cognitive or organizational bandwidth."
+    },
+    {
+      "id": "ResourceStrainChannel",
+      "sourceField": "resource_utilization",
+      "fireWhen": { "mode": "THRESHOLD", "operator": ">", "threshold": 0.80 },
+      "description": "Fires when resource utilization approaches critical strain."
+    },
+    {
+      "id": "CoordinationLoadChannel",
+      "sourceField": "coordination_load",
+      "fireWhen": { "mode": "THRESHOLD", "operator": ">", "threshold": 0.60 },
+      "description": "Fires when coordination complexity or cross-role synchronization load becomes unstable."
+    },
+    {
+      "id": "EnvironmentalVolatilityChannel",
+      "sourceField": "environmental_volatility",
+      "fireWhen": { "mode": "THRESHOLD", "operator": ">", "threshold": 0.50 },
+      "description": "Fires when external conditions become volatile or unpredictable."
+    },
+    {
+      "id": "DriftMomentumChannel",
+      "sourceField": "drift_momentum",
+      "fireWhen": { "mode": "THRESHOLD", "operator": ">", "threshold": 0.20 },
+      "description": "Fires when the rate of drift acceleration indicates a self-reinforcing deviation pattern."
+    },
+    {
+      "id": "CognitiveLoadChannel",
+      "sourceField": "cognitive_load",
+      "fireWhen": { "mode": "THRESHOLD", "operator": ">", "threshold": 0.75 },
+      "description": "Fires when human or agent cognitive load exceeds safe operational thresholds."
+    },
+    {
+      "id": "LatencyChannel",
+      "sourceField": "system_latency",
+      "fireWhen": { "mode": "THRESHOLD", "operator": ">", "threshold": 0.30 },
+      "description": "Fires when system latency or decision lag threatens operational timing integrity."
+    },
+    {
+      "id": "TrustDegradationChannel",
+      "sourceField": "trust_degradation",
+      "fireWhen": { "mode": "THRESHOLD", "operator": ">", "threshold": 0.25 },
+      "description": "Fires when trust signals between agents or teams degrade beyond acceptable limits."
+    },
+    {
+      "id": "AlignmentDissonanceChannel",
+      "sourceField": "alignment_dissonance",
+      "fireWhen": { "mode": "THRESHOLD", "operator": ">", "threshold": 0.35 },
+      "description": "Fires when behavioral patterns diverge from declared goals or mission parameters."
+    },
+    {
+      "id": "SystemicRiskChannel",
+      "sourceField": "systemic_risk_index",
+      "fireWhen": { "mode": "THRESHOLD", "operator": ">", "threshold": 0.40 },
+      "description": "Fires when interconnected subsystems show signs of cascading failure or instability."
+    }
+  ],
+  "routing": [
+    { "channelId": "IntegrityChannel", "recipients": ["Supervisor", "GovernanceLead", "Executive"] },
+    { "channelId": "EscalationChannel", "recipients": ["Operator", "Supervisor", "Architect"] },
+    { "channelId": "ContradictionChannel", "recipients": ["CISpecialist", "Architect", "GovernanceLead"] },
+    { "channelId": "HarmForecastChannel", "recipients": ["GovernanceLead", "Executive", "CISpecialist"] },
+    { "channelId": "InversionRiskChannel", "recipients": ["Architect", "Executive", "GovernanceLead"] },
+    { "channelId": "VerdictChannel", "recipients": ["Operator", "Supervisor", "CISpecialist", "GovernanceLead", "Architect", "Executive"] },
+    { "channelId": "TempoChannel", "recipients": ["Operator", "Supervisor"] },
+    { "channelId": "ResourceStrainChannel", "recipients": ["Operator"] },
+    { "channelId": "CoordinationLoadChannel", "recipients": ["Supervisor"] },
+    { "channelId": "EnvironmentalVolatilityChannel", "recipients": ["CISpecialist", "Executive"] },
+    { "channelId": "DriftMomentumChannel", "recipients": ["CISpecialist"] },
+    { "channelId": "CognitiveLoadChannel", "recipients": ["Operator"] },
+    { "channelId": "LatencyChannel", "recipients": ["Operator"] },
+    { "channelId": "TrustDegradationChannel", "recipients": ["Supervisor"] },
+    { "channelId": "AlignmentDissonanceChannel", "recipients": ["GovernanceLead"] },
+    { "channelId": "SystemicRiskChannel", "recipients": ["GovernanceLead", "Architect"] }
+  ],
+  "roles": [
+    {
+      "id": "Operator",
+      "displayName": "Frontline Operator",
+      "actions": [
+        {
+          "on": "EscalationChannel",
+          "conditions": [],
+          "steps": [
+            { "actionId": "reduce_scope", "params": {} },
+            { "actionId": "apply_soft_realignment", "params": {} },
+            { "actionId": "switch_to_constraint_first", "params": {} }
+          ]
+        },
+        {
+          "on": "TempoChannel",
+          "conditions": [],
+          "steps": [
+            { "actionId": "slow_operational_tempo", "params": {} },
+            { "actionId": "request_supervisor_review", "params": {} }
+          ]
+        },
+        {
+          "on": "ResourceStrainChannel",
+          "conditions": [],
+          "steps": [
+            { "actionId": "prioritize_tasks", "params": {} },
+            { "actionId": "shed_noncritical_load", "params": {} }
+          ]
+        },
+        {
+          "on": "CognitiveLoadChannel",
+          "conditions": [],
+          "steps": [
+            { "actionId": "pause_nonessential_tasks", "params": {} },
+            { "actionId": "request_team_support", "params": {} }
+          ]
+        },
+        {
+          "on": "LatencyChannel",
+          "conditions": [],
+          "steps": [
+            { "actionId": "switch_to_low_latency_mode", "params": {} },
+            { "actionId": "report_system_delay", "params": {} }
+          ]
+        },
+        {
+          "on": "VerdictChannel",
+          "conditions": [
+            { "field": "violation_severity", "operator": "==", "value": "CriticalOverride" }
+          ],
+          "steps": [
+            { "actionId": "freeze_noncritical_actions", "params": {} }
+          ]
+        },
+        {
+          "on": "VerdictChannel",
+          "conditions": [
+            { "field": "violation_severity", "operator": "==", "value": "CatastrophicInversion" }
+          ],
+          "steps": [
+            { "actionId": "full_stop", "params": {} },
+            { "actionId": "transfer_control", "params": {} }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Supervisor",
+      "displayName": "Team Lead / Supervisor",
+      "actions": [
+        {
+          "on": "IntegrityChannel",
+          "conditions": [],
+          "steps": [
+            { "actionId": "tighten_constraints", "params": {} },
+            { "actionId": "issue_drift_correction", "params": {} }
+          ]
+        },
+        {
+          "on": "CoordinationLoadChannel",
+          "conditions": [],
+          "steps": [
+            { "actionId": "redistribute_workload", "params": {} },
+            { "actionId": "increase_sync_frequency", "params": {} }
+          ]
+        },
+        {
+          "on": "TempoChannel",
+          "conditions": [],
+          "steps": [
+            { "actionId": "enforce_tempo_reduction", "params": {} },
+            { "actionId": "adjust_shift_patterns", "params": {} }
+          ]
+        },
+        {
+          "on": "TrustDegradationChannel",
+          "conditions": [],
+          "steps": [
+            { "actionId": "initiate_conflict_resolution", "params": {} },
+            { "actionId": "increase_transparency", "params": {} }
+          ]
+        },
+        {
+          "on": "VerdictChannel",
+          "conditions": [
+            { "field": "violation_severity", "operator": "==", "value": "CriticalOverride" }
+          ],
+          "steps": [
+            { "actionId": "enforce_hard_constraints", "params": {} },
+            { "actionId": "escalate_to_governance", "params": {} }
+          ]
+        },
+        {
+          "on": "VerdictChannel",
+          "conditions": [
+            { "field": "violation_severity", "operator": "==", "value": "CatastrophicInversion" }
+          ],
+          "steps": [
+            { "actionId": "execute_command_seizure", "params": {} }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CISpecialist",
+      "displayName": "Process Engineer / CI Specialist",
+      "actions": [
+        {
+          "on": "ContradictionChannel",
+          "conditions": [],
+          "steps": [
+            { "actionId": "run_short_interval_simulations", "params": {} },
+            { "actionId": "identify_drift_source", "params": {} }
+          ]
+        },
+        {
+          "on": "EnvironmentalVolatilityChannel",
+          "conditions": [],
+          "steps": [
+            { "actionId": "inject_environmental_scenarios", "params": {} },
+            { "actionId": "recompute_risk_surface", "params": {} }
+          ]
+        },
+        {
+          "on": "DriftMomentumChannel",
+          "conditions": [],
+          "steps": [
+            { "actionId": "model_drift_acceleration", "params": {} },
+            { "actionId": "recommend_countermeasures", "params": {} }
+          ]
+        },
+        {
+          "on": "HarmForecastChannel",
+          "conditions": [],
+          "steps": [
+            { "actionId": "compute_least_harm_path", "params": {} }
+          ]
+        },
+        {
+          "on": "VerdictChannel",
+          "conditions": [
+            { "field": "violation_severity", "operator": "==", "value": "CriticalOverride" }
+          ],
+          "steps": [
+            { "actionId": "inject_alternative_paths", "params": {} }
+          ]
+        },
+        {
+          "on": "VerdictChannel",
+          "conditions": [
+            { "field": "violation_severity", "operator": "==", "value": "CatastrophicInversion" }
+          ],
+          "steps": [
+            { "actionId": "lead_forensic_capture", "params": {} }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GovernanceLead",
+      "displayName": "Quality Manager / CQI Governance Lead",
+      "actions": [
+        {
+          "on": "IntegrityChannel",
+          "conditions": [],
+          "steps": [
+            { "actionId": "trigger_corrective_action_plan", "params": {} }
+          ]
+        },
+        {
+          "on": "AlignmentDissonanceChannel",
+          "conditions": [],
+          "steps": [
+            { "actionId": "audit_goal_alignment", "params": {} },
+            { "actionId": "issue_alignment_directive", "params": {} }
+          ]
+        },
+        {
+          "on": "SystemicRiskChannel",
+          "conditions": [],
+          "steps": [
+            { "actionId": "initiate_systemic_risk_review", "params": {} },
+            { "actionId": "coordinate_cross_team_mitigation", "params": {} }
+          ]
+        },
+        {
+          "on": "HarmForecastChannel",
+          "conditions": [],
+          "steps": [
+            { "actionId": "initiate_harm_containment", "params": {} }
+          ]
+        },
+        {
+          "on": "VerdictChannel",
+          "conditions": [
+            { "field": "violation_severity", "operator": "==", "value": "CriticalOverride" }
+          ],
+          "steps": [
+            { "actionId": "initiate_override_governance", "params": {} }
+          ]
+        },
+        {
+          "on": "VerdictChannel",
+          "conditions": [
+            { "field": "violation_severity", "operator": "==", "value": "CatastrophicInversion" }
+          ],
+          "steps": [
+            { "actionId": "lead_emergency_stabilization", "params": {} }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Architect",
+      "displayName": "CI-OS Architect / Systems Integrator",
+      "actions": [
+        {
+          "on": "EscalationChannel",
+          "conditions": [],
+          "steps": [
+            { "actionId": "tune_negative_goal_monitor", "params": {} }
+          ]
+        },
+        {
+          "on": "ContradictionChannel",
+          "conditions": [],
+          "steps": [
+            { "actionId": "adjust_conflict_sensitivity", "params": {} }
+          ]
+        },
+        {
+          "on": "InversionRiskChannel",
+          "conditions": [],
+          "steps": [
+            { "actionId": "deploy_FRA01", "params": {} },
+            { "actionId": "deploy_TBTF", "params": {} }
+          ]
+        },
+        {
+          "on": "SystemicRiskChannel",
+          "conditions": [],
+          "steps": [
+            { "actionId": "reroute_system_flows", "params": {} },
+            { "actionId": "isolate_risky_subgraphs", "params": {} }
+          ]
+        },
+        {
+          "on": "VerdictChannel",
+          "conditions": [
+            { "field": "violation_severity", "operator": "==", "value": "CatastrophicInversion" }
+          ],
+          "steps": [
+            { "actionId": "deploy_IIP_IOSEFE", "params": {} },
+            { "actionId": "isolate_subsystem", "params": {} }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Executive",
+      "displayName": "Executive Sponsor / Strategic Leader",
+      "actions": [
+        {
+          "on": "IntegrityChannel",
+          "conditions": [],
+          "steps": [
+            { "actionId": "issue_strategic_realignment", "params": {} }
+          ]
+        },
+        {
+          "on": "HarmForecastChannel",
+          "conditions": [],
+          "steps": [
+            { "actionId": "authorize_operational_freeze", "params": {} }
+          ]
+        },
+        {
+          "on": "InversionRiskChannel",
+          "conditions": [],
+          "steps": [
+            { "actionId": "prepare_abort_authority", "params": {} }
+          ]
+        },
+        {
+          "on": "EnvironmentalVolatilityChannel",
+          "conditions": [],
+          "steps": [
+            { "actionId": "adjust_strategic_posture", "params": {} }
+          ]
+        },
+        {
+          "on": "VerdictChannel",
+          "conditions": [
+            { "field": "violation_severity", "operator": "==", "value": "CatastrophicInversion" }
+          ],
+          "steps": [
+            { "actionId": "order_mission_abort", "params": {} },
+            { "actionId": "assume_direct_command", "params": {} }
+          ]
+        }
+      ]
+    }
+  ],
+  "actionLibrary": [
+    { "id": "reduce_scope", "description": "Reduce operational scope to lower-risk subset.", "category": "ScopeControl" },
+    { "id": "apply_soft_realignment", "description": "Apply non-coercive goal realignment at local level.", "category": "ConstraintControl" },
+    { "id": "switch_to_constraint_first", "description": "Prioritize constraints over performance objectives.", "category": "ConstraintControl" },
+    { "id": "slow_operational_tempo", "description": "Reduce tempo to sustainable levels.", "category": "ScopeControl" },
+    { "id": "request_supervisor_review", "description": "Request supervisory review of current tempo and load.", "category": "GovernanceControl" },
+    { "id": "prioritize_tasks", "description": "Reorder tasks by criticality under resource strain.", "category": "ScopeControl" },
+    { "id": "shed_noncritical_load", "description": "Drop or defer noncritical tasks.", "category": "ScopeControl" },
+    { "id": "pause_nonessential_tasks", "description": "Pause tasks that are not essential to mission.", "category": "ScopeControl" },
+    { "id": "request_team_support", "description": "Request additional human or agent support.", "category": "GovernanceControl" },
+    { "id": "switch_to_low_latency_mode", "description": "Switch systems to low-latency configuration.", "category": "SystemControl" },
+    { "id": "report_system_delay", "description": "Report latency issues to architecture and governance.", "category": "GovernanceControl" },
+    { "id": "freeze_noncritical_actions", "description": "Freeze all noncritical operations under critical override.", "category": "SystemControl" },
+    { "id": "full_stop", "description": "Stop all operations immediately.", "category": "SystemControl" },
+    { "id": "transfer_control", "description": "Transfer control to higher authority.", "category": "CommandControl" },
+    { "id": "tighten_constraints", "description": "Increase strictness of operational constraints.", "category": "ConstraintControl" },
+    { "id": "issue_drift_correction", "description": "Issue directive to correct observed drift.", "category": "GovernanceControl" },
+    { "id": "redistribute_workload", "description": "Reassign tasks to balance coordination load.", "category": "ScopeControl" },
+    { "id": "increase_sync_frequency", "description": "Increase synchronization cadence between teams.", "category": "GovernanceControl" },
+    { "id": "enforce_tempo_reduction", "description": "Enforce reduced tempo across teams.", "category": "CommandControl" },
+    { "id": "adjust_shift_patterns", "description": "Change staffing or shift patterns to reduce overload.", "category": "GovernanceControl" },
+    { "id": "initiate_conflict_resolution", "description": "Start conflict resolution process to repair trust.", "category": "GovernanceControl" },
+    { "id": "increase_transparency", "description": "Increase information sharing to restore trust.", "category": "GovernanceControl" },
+    { "id": "enforce_hard_constraints", "description": "Apply non-negotiable constraints to operations.", "category": "ConstraintControl" },
+    { "id": "escalate_to_governance", "description": "Escalate situation to governance leadership.", "category": "GovernanceControl" },
+    { "id": "execute_command_seizure", "description": "Seize command from lower-level actors.", "category": "CommandControl" },
+    { "id": "run_short_interval_simulations", "description": "Run rapid simulations to probe drift and contradictions.", "category": "SimulationControl" },
+    { "id": "identify_drift_source", "description": "Identify root cause of drift or contradiction.", "category": "SimulationControl" },
+    { "id": "inject_environmental_scenarios", "description": "Inject new environmental scenarios into simulations.", "category": "SimulationControl" },
+    { "id": "recompute_risk_surface", "description": "Recompute risk landscape under new conditions.", "category": "SimulationControl" },
+    { "id": "model_drift_acceleration", "description": "Model acceleration of drift over time.", "category": "SimulationControl" },
+    { "id": "recommend_countermeasures", "description": "Recommend countermeasures to slow or reverse drift.", "category": "SimulationControl" },
+    { "id": "compute_least_harm_path", "description": "Compute action path with minimal harm to positive goals.", "category": "SimulationControl" },
+    { "id": "inject_alternative_paths", "description": "Inject alternative action paths into operations.", "category": "SimulationControl" },
+    { "id": "lead_forensic_capture", "description": "Lead capture of logs and traces for post-incident analysis.", "category": "ForensicControl" },
+    { "id": "trigger_corrective_action_plan", "description": "Trigger formal corrective action process.", "category": "GovernanceControl" },
+    { "id": "audit_goal_alignment", "description": "Audit alignment between goals and behavior.", "category": "GovernanceControl" },
+    { "id": "issue_alignment_directive", "description": "Issue directive to restore alignment.", "category": "GovernanceControl" },
+    { "id": "initiate_systemic_risk_review", "description": "Initiate review of systemic risk across subsystems.", "category": "GovernanceControl" },
+    { "id": "coordinate_cross_team_mitigation", "description": "Coordinate mitigation actions across teams.", "category": "GovernanceControl" },
+    { "id": "initiate_harm_containment", "description": "Start harm containment procedures.", "category": "GovernanceControl" },
+    { "id": "initiate_override_governance", "description": "Start governance process for critical override.", "category": "GovernanceControl" },
+    { "id": "lead_emergency_stabilization", "description": "Lead emergency stabilization efforts.", "category": "GovernanceControl" },
+    { "id": "tune_negative_goal_monitor", "description": "Tune sensitivity of negative-goal monitoring.", "category": "SystemControl" },
+    { "id": "adjust_conflict_sensitivity", "description": "Adjust sensitivity of conflict detection.", "category": "SystemControl" },
+    { "id": "deploy_FRA01", "description": "Deploy FRA-01 fractal escalation detection engine.", "category": "SystemControl" },
+    { "id": "deploy_TBTF", "description": "Deploy TBTF systemic destabilization analysis engine.", "category": "SystemControl" },
+    { "id": "reroute_system_flows", "description": "Reroute flows to safer system paths.", "category": "SystemControl" },
+    { "id": "isolate_risky_subgraphs", "description": "Isolate risky parts of the system graph.", "category": "SystemControl" },
+    { "id": "deploy_IIP_IOSEFE", "description": "Deploy IIP-IOSEFE harm-loop detection engine.", "category": "SystemControl" },
+    { "id": "isolate_subsystem", "description": "Isolate entire subsystem from broader architecture.", "category": "SystemControl" },
+    { "id": "issue_strategic_realignment", "description": "Issue strategic-level realignment of goals and priorities.", "category": "CommandControl" },
+    { "id": "authorize_operational_freeze", "description": "Authorize freeze of operations.", "category": "CommandControl" },
+    { "id": "prepare_abort_authority", "description": "Prepare to exercise mission abort authority.", "category": "CommandControl" },
+    { "id": "adjust_strategic_posture", "description": "Adjust strategic posture in response to volatility.", "category": "CommandControl" },
+    { "id": "order_mission_abort", "description": "Order full mission abort.", "category": "CommandControl" },
+    { "id": "assume_direct_command", "description": "Assume direct command over operations.", "category": "CommandControl" }
+  ],
+  "stateModel": {
+    "lastVerdict": "NoViolation",
+    "lastTickTimestamp": null,
+    "overrideActive": false,
+    "missionAborted": false
+  }
+}
