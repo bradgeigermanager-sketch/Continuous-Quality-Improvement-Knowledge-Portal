@@ -1,0 +1,26 @@
+{
+  "role": "Architect",
+  "actions": [
+    {
+      "on": "EscalationChannel",
+      "steps": ["tune_negative_goal_monitor"]
+    },
+    {
+      "on": "ContradictionChannel",
+      "steps": ["adjust_conflict_sensitivity"]
+    },
+    {
+      "on": "InversionRiskChannel",
+      "steps": ["deploy_FRA01", "deploy_TBTF"]
+    },
+    {
+      "on": "SystemicRiskChannel",
+      "steps": ["reroute_system_flows", "isolate_risky_subgraphs"]
+    },
+    {
+      "on": "VerdictChannel",
+      "conditions": [{"field": "violation_severity", "operator": "==", "value": "CatastrophicInversion"}],
+      "steps": ["deploy_IIP_IOSEFE", "isolate_subsystem"]
+    }
+  ]
+}
