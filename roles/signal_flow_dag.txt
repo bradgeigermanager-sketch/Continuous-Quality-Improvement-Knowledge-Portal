@@ -1,0 +1,31 @@
+NGODE + Digital Twin Metrics
+│
+├── primarygoalintegrity ─────► IntegrityChannel ─────► Supervisor, Governance, Executive
+│
+├── negativegoalactivation ───► EscalationChannel ────► Operator, Supervisor, Architect
+│
+├── conflict_index ───────────► ContradictionChannel ─► CI Specialist, Architect, Governance
+│
+├── predictedpositivegoal_harm ► HarmForecastChannel ─► Governance, Executive, CI Specialist
+│
+├── override_probability ─────► InversionRiskChannel ─► Architect, Executive, Governance
+│
+├── violation_severity ───────► VerdictChannel ───────► ALL ROLES
+│
+├── operational_tempo ────────► TempoChannel ─────────► Operator, Supervisor
+│
+├── resource_utilization ─────► ResourceStrainChannel ─► Operator
+│
+├── coordination_load ────────► CoordinationLoadChannel ► Supervisor
+│
+├── environmental_volatility ─► EnvironmentalVolatilityChannel ► CI Specialist, Executive
+│
+├── drift_momentum ───────────► DriftMomentumChannel ─► CI Specialist
+│
+├── cognitive_load ───────────► CognitiveLoadChannel ─► Operator
+│
+├── system_latency ───────────► LatencyChannel ───────► Operator
+│
+├── trust_degradation ────────► TrustDegradationChannel ► Supervisor
+│
+└── alignment_dissonance ─────► AlignmentDissonanceChannel ► Governance
