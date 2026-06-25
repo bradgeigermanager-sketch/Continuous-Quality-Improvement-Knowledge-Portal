@@ -1,0 +1,35 @@
+{
+  "role": "Operator",
+  "actions": [
+    {
+      "on": "EscalationChannel",
+      "steps": ["reduce_scope", "apply_soft_realignment", "switch_to_constraint_first"]
+    },
+    {
+      "on": "TempoChannel",
+      "steps": ["slow_operational_tempo", "request_supervisor_review"]
+    },
+    {
+      "on": "ResourceStrainChannel",
+      "steps": ["prioritize_tasks", "shed_noncritical_load"]
+    },
+    {
+      "on": "CognitiveLoadChannel",
+      "steps": ["pause_nonessential_tasks", "request_team_support"]
+    },
+    {
+      "on": "LatencyChannel",
+      "steps": ["switch_to_low_latency_mode", "report_system_delay"]
+    },
+    {
+      "on": "VerdictChannel",
+      "conditions": [{"field": "violation_severity", "operator": "==", "value": "CriticalOverride"}],
+      "steps": ["freeze_noncritical_actions"]
+    },
+    {
+      "on": "VerdictChannel",
+      "conditions": [{"field": "violation_severity", "operator": "==", "value": "CatastrophicInversion"}],
+      "steps": ["full_stop", "transfer_control"]
+    }
+  ]
+}
