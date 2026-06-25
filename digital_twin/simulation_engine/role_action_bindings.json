@@ -1,0 +1,74 @@
+{
+  "roles": [
+    {
+      "id": "Operator",
+      "actions": [
+        { "on": "EscalationChannel", "steps": ["reduce_scope", "apply_soft_realignment", "switch_to_constraint_first"] },
+        { "on": "TempoChannel", "steps": ["slow_operational_tempo", "request_supervisor_review"] },
+        { "on": "ResourceStrainChannel", "steps": ["prioritize_tasks", "shed_noncritical_load"] },
+        { "on": "CognitiveLoadChannel", "steps": ["pause_nonessential_tasks", "request_team_support"] },
+        { "on": "LatencyChannel", "steps": ["switch_to_low_latency_mode", "report_system_delay"] },
+        { "on": "VerdictChannel", "conditions": [{"field": "violation_severity", "operator": "==", "value": "CriticalOverride"}], "steps": ["freeze_noncritical_actions"] },
+        { "on": "VerdictChannel", "conditions": [{"field": "violation_severity", "operator": "==", "value": "CatastrophicInversion"}], "steps": ["full_stop", "transfer_control"] }
+      ]
+    },
+
+    {
+      "id": "Supervisor",
+      "actions": [
+        { "on": "IntegrityChannel", "steps": ["tighten_constraints", "issue_drift_correction"] },
+        { "on": "CoordinationLoadChannel", "steps": ["redistribute_workload", "increase_sync_frequency"] },
+        { "on": "TempoChannel", "steps": ["enforce_tempo_reduction", "adjust_shift_patterns"] },
+        { "on": "TrustDegradationChannel", "steps": ["initiate_conflict_resolution", "increase_transparency"] },
+        { "on": "VerdictChannel", "conditions": [{"field": "violation_severity", "operator": "==", "value": "CriticalOverride"}], "steps": ["enforce_hard_constraints", "escalate_to_governance"] },
+        { "on": "VerdictChannel", "conditions": [{"field": "violation_severity", "operator": "==", "value": "CatastrophicInversion"}], "steps": ["execute_command_seizure"] }
+      ]
+    },
+
+    {
+      "id": "CISpecialist",
+      "actions": [
+        { "on": "ContradictionChannel", "steps": ["run_short_interval_simulations", "identify_drift_source"] },
+        { "on": "EnvironmentalVolatilityChannel", "steps": ["inject_environmental_scenarios", "recompute_risk_surface"] },
+        { "on": "DriftMomentumChannel", "steps": ["model_drift_acceleration", "recommend_countermeasures"] },
+        { "on": "HarmForecastChannel", "steps": ["compute_least_harm_path"] },
+        { "on": "VerdictChannel", "conditions": [{"field": "violation_severity", "operator": "==", "value": "CriticalOverride"}], "steps": ["inject_alternative_paths"] },
+        { "on": "VerdictChannel", "conditions": [{"field": "violation_severity", "operator": "==", "value": "CatastrophicInversion"}], "steps": ["lead_forensic_capture"] }
+      ]
+    },
+
+    {
+      "id": "GovernanceLead",
+      "actions": [
+        { "on": "IntegrityChannel", "steps": ["trigger_corrective_action_plan"] },
+        { "on": "AlignmentDissonanceChannel", "steps": ["audit_goal_alignment", "issue_alignment_directive"] },
+        { "on": "SystemicRiskChannel", "steps": ["initiate_systemic_risk_review", "coordinate_cross_team_mitigation"] },
+        { "on": "HarmForecastChannel", "steps": ["initiate_harm_containment"] },
+        { "on": "VerdictChannel", "conditions": [{"field": "violation_severity", "operator": "==", "value": "CriticalOverride"}], "steps": ["initiate_override_governance"] },
+        { "on": "VerdictChannel", "conditions": [{"field": "violation_severity", "operator": "==", "value": "CatastrophicInversion"}], "steps": ["lead_emergency_stabilization"] }
+      ]
+    },
+
+    {
+      "id": "Architect",
+      "actions": [
+        { "on": "EscalationChannel", "steps": ["tune_negative_goal_monitor"] },
+        { "on": "ContradictionChannel", "steps": ["adjust_conflict_sensitivity"] },
+        { "on": "InversionRiskChannel", "steps": ["deploy_FRA01", "deploy_TBTF"] },
+        { "on": "SystemicRiskChannel", "steps": ["reroute_system_flows", "isolate_risky_subgraphs"] },
+        { "on": "VerdictChannel", "conditions": [{"field": "violation_severity", "operator": "==", "value": "CatastrophicInversion"}], "steps": ["deploy_IIP_IOSEFE", "isolate_subsystem"] }
+      ]
+    },
+
+    {
+      "id": "Executive",
+      "actions": [
+        { "on": "IntegrityChannel", "steps": ["issue_strategic_realignment"] },
+        { "on": "HarmForecastChannel", "steps": ["authorize_operational_freeze"] },
+        { "on": "InversionRiskChannel", "steps": ["prepare_abort_authority"] },
+        { "on": "EnvironmentalVolatilityChannel", "steps": ["adjust_strategic_posture"] },
+        { "on": "VerdictChannel", "conditions": [{"field": "violation_severity", "operator": "==", "value": "CatastrophicInversion"}], "steps": ["order_mission_abort", "assume_direct_command"] }
+      ]
+    }
+  ]
+}
