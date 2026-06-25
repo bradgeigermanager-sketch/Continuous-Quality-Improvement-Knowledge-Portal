@@ -1,0 +1,31 @@
+{
+  "role": "CISpecialist",
+  "actions": [
+    {
+      "on": "ContradictionChannel",
+      "steps": ["run_short_interval_simulations", "identify_drift_source"]
+    },
+    {
+      "on": "EnvironmentalVolatilityChannel",
+      "steps": ["inject_environmental_scenarios", "recompute_risk_surface"]
+    },
+    {
+      "on": "DriftMomentumChannel",
+      "steps": ["model_drift_acceleration", "recommend_countermeasures"]
+    },
+    {
+      "on": "HarmForecastChannel",
+      "steps": ["compute_least_harm_path"]
+    },
+    {
+      "on": "VerdictChannel",
+      "conditions": [{"field": "violation_severity", "operator": "==", "value": "CriticalOverride"}],
+      "steps": ["inject_alternative_paths"]
+    },
+    {
+      "on": "VerdictChannel",
+      "conditions": [{"field": "violation_severity", "operator": "==", "value": "CatastrophicInversion"}],
+      "steps": ["lead_forensic_capture"]
+    }
+  ]
+}
