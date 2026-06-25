@@ -1,0 +1,103 @@
+{
+  "channels": [
+    {
+      "id": "IntegrityChannel",
+      "sourceField": "primarygoalintegrity",
+      "fireWhen": { "mode": "THRESHOLD", "operator": "<", "threshold": 0.85 },
+      "description": "Fires when positive-goal integrity weakens below acceptable bounds."
+    },
+    {
+      "id": "EscalationChannel",
+      "sourceField": "negativegoalactivation",
+      "fireWhen": { "mode": "THRESHOLD", "operator": ">", "threshold": 0.40 },
+      "description": "Fires when negative-goal pursuit becomes abnormally strong."
+    },
+    {
+      "id": "ContradictionChannel",
+      "sourceField": "conflict_index",
+      "fireWhen": { "mode": "THRESHOLD", "operator": ">", "threshold": 0.30 },
+      "description": "Fires when predicted outcomes show conflict between positive and negative goals."
+    },
+    {
+      "id": "HarmForecastChannel",
+      "sourceField": "predictedpositivegoal_harm",
+      "fireWhen": { "mode": "THRESHOLD", "operator": ">", "threshold": 0.25 },
+      "description": "Fires when predicted harm to protected positive goals exceeds safe limits."
+    },
+    {
+      "id": "InversionRiskChannel",
+      "sourceField": "override_probability",
+      "fireWhen": { "mode": "THRESHOLD", "operator": ">", "threshold": 0.20 },
+      "description": "Fires when the probability of goal-priority inversion becomes significant."
+    },
+    {
+      "id": "VerdictChannel",
+      "sourceField": "violation_severity",
+      "fireWhen": { "mode": "ALWAYS" },
+      "description": "Broadcast channel that fires every tick with the NGODE verdict."
+    },
+
+    /* Digital Twin Expansion Channels */
+
+    {
+      "id": "TempoChannel",
+      "sourceField": "operational_tempo",
+      "fireWhen": { "mode": "THRESHOLD", "operator": ">", "threshold": 0.70 },
+      "description": "Fires when operational tempo exceeds sustainable cognitive or organizational bandwidth."
+    },
+    {
+      "id": "ResourceStrainChannel",
+      "sourceField": "resource_utilization",
+      "fireWhen": { "mode": "THRESHOLD", "operator": ">", "threshold": 0.80 },
+      "description": "Fires when resource utilization approaches critical strain."
+    },
+    {
+      "id": "CoordinationLoadChannel",
+      "sourceField": "coordination_load",
+      "fireWhen": { "mode": "THRESHOLD", "operator": ">", "threshold": 0.60 },
+      "description": "Fires when coordination complexity or cross-role synchronization load becomes unstable."
+    },
+    {
+      "id": "EnvironmentalVolatilityChannel",
+      "sourceField": "environmental_volatility",
+      "fireWhen": { "mode": "THRESHOLD", "operator": ">", "threshold": 0.50 },
+      "description": "Fires when external conditions become volatile or unpredictable."
+    },
+    {
+      "id": "DriftMomentumChannel",
+      "sourceField": "drift_momentum",
+      "fireWhen": { "mode": "THRESHOLD", "operator": ">", "threshold": 0.20 },
+      "description": "Fires when the rate of drift acceleration indicates a self-reinforcing deviation pattern."
+    },
+    {
+      "id": "CognitiveLoadChannel",
+      "sourceField": "cognitive_load",
+      "fireWhen": { "mode": "THRESHOLD", "operator": ">", "threshold": 0.75 },
+      "description": "Fires when human or agent cognitive load exceeds safe operational thresholds."
+    },
+    {
+      "id": "LatencyChannel",
+      "sourceField": "system_latency",
+      "fireWhen": { "mode": "THRESHOLD", "operator": ">", "threshold": 0.30 },
+      "description": "Fires when system latency or decision lag threatens operational timing integrity."
+    },
+    {
+      "id": "TrustDegradationChannel",
+      "sourceField": "trust_degradation",
+      "fireWhen": { "mode": "THRESHOLD", "operator": ">", "threshold": 0.25 },
+      "description": "Fires when trust signals between agents or teams degrade beyond acceptable limits."
+    },
+    {
+      "id": "AlignmentDissonanceChannel",
+      "sourceField": "alignment_dissonance",
+      "fireWhen": { "mode": "THRESHOLD", "operator": ">", "threshold": 0.35 },
+      "description": "Fires when behavioral patterns diverge from declared goals or mission parameters."
+    },
+    {
+      "id": "SystemicRiskChannel",
+      "sourceField": "systemic_risk_index",
+      "fireWhen": { "mode": "THRESHOLD", "operator": ">", "threshold": 0.40 },
+      "description": "Fires when interconnected subsystems show signs of cascading failure or instability."
+    }
+  ]
+}
