@@ -1,0 +1,26 @@
+{
+  "role": "Executive",
+  "actions": [
+    {
+      "on": "IntegrityChannel",
+      "steps": ["issue_strategic_realignment"]
+    },
+    {
+      "on": "HarmForecastChannel",
+      "steps": ["authorize_operational_freeze"]
+    },
+    {
+      "on": "InversionRiskChannel",
+      "steps": ["prepare_abort_authority"]
+    },
+    {
+      "on": "EnvironmentalVolatilityChannel",
+      "steps": ["adjust_strategic_posture"]
+    },
+    {
+      "on": "VerdictChannel",
+      "conditions": [{"field": "violation_severity", "operator": "==", "value": "CatastrophicInversion"}],
+      "steps": ["order_mission_abort", "assume_direct_command"]
+    }
+  ]
+}
