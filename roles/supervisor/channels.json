@@ -1,0 +1,31 @@
+{
+  "role": "Supervisor",
+  "actions": [
+    {
+      "on": "IntegrityChannel",
+      "steps": ["tighten_constraints", "issue_drift_correction"]
+    },
+    {
+      "on": "CoordinationLoadChannel",
+      "steps": ["redistribute_workload", "increase_sync_frequency"]
+    },
+    {
+      "on": "TempoChannel",
+      "steps": ["enforce_tempo_reduction", "adjust_shift_patterns"]
+    },
+    {
+      "on": "TrustDegradationChannel",
+      "steps": ["initiate_conflict_resolution", "increase_transparency"]
+    },
+    {
+      "on": "VerdictChannel",
+      "conditions": [{"field": "violation_severity", "operator": "==", "value": "CriticalOverride"}],
+      "steps": ["enforce_hard_constraints", "escalate_to_governance"]
+    },
+    {
+      "on": "VerdictChannel",
+      "conditions": [{"field": "violation_severity", "operator": "==", "value": "CatastrophicInversion"}],
+      "steps": ["execute_command_seizure"]
+    }
+  ]
+}
