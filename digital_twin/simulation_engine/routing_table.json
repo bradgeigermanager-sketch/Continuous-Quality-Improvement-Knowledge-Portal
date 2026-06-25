@@ -1,0 +1,23 @@
+{
+  "routing": [
+    { "channelId": "IntegrityChannel", "recipients": ["Supervisor", "GovernanceLead", "Executive"] },
+    { "channelId": "EscalationChannel", "recipients": ["Operator", "Supervisor", "Architect"] },
+    { "channelId": "ContradictionChannel", "recipients": ["CISpecialist", "Architect", "GovernanceLead"] },
+    { "channelId": "HarmForecastChannel", "recipients": ["GovernanceLead", "Executive", "CISpecialist"] },
+    { "channelId": "InversionRiskChannel", "recipients": ["Architect", "Executive", "GovernanceLead"] },
+    { "channelId": "VerdictChannel", "recipients": ["Operator", "Supervisor", "CISpecialist", "GovernanceLead", "Architect", "Executive"] },
+
+    /* Digital Twin Expansion Routing */
+
+    { "channelId": "TempoChannel", "recipients": ["Operator", "Supervisor"] },
+    { "channelId": "ResourceStrainChannel", "recipients": ["Operator"] },
+    { "channelId": "CoordinationLoadChannel", "recipients": ["Supervisor"] },
+    { "channelId": "EnvironmentalVolatilityChannel", "recipients": ["CISpecialist", "Executive"] },
+    { "channelId": "DriftMomentumChannel", "recipients": ["CISpecialist"] },
+    { "channelId": "CognitiveLoadChannel", "recipients": ["Operator"] },
+    { "channelId": "LatencyChannel", "recipients": ["Operator"] },
+    { "channelId": "TrustDegradationChannel", "recipients": ["Supervisor"] },
+    { "channelId": "AlignmentDissonanceChannel", "recipients": ["GovernanceLead"] },
+    { "channelId": "SystemicRiskChannel", "recipients": ["GovernanceLead", "Architect"] }
+  ]
+}
