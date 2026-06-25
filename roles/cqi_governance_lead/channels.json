@@ -1,0 +1,31 @@
+{
+  "role": "GovernanceLead",
+  "actions": [
+    {
+      "on": "IntegrityChannel",
+      "steps": ["trigger_corrective_action_plan"]
+    },
+    {
+      "on": "AlignmentDissonanceChannel",
+      "steps": ["audit_goal_alignment", "issue_alignment_directive"]
+    },
+    {
+      "on": "SystemicRiskChannel",
+      "steps": ["initiate_systemic_risk_review", "coordinate_cross_team_mitigation"]
+    },
+    {
+      "on": "HarmForecastChannel",
+      "steps": ["initiate_harm_containment"]
+    },
+    {
+      "on": "VerdictChannel",
+      "conditions": [{"field": "violation_severity", "operator": "==", "value": "CriticalOverride"}],
+      "steps": ["initiate_override_governance"]
+    },
+    {
+      "on": "VerdictChannel",
+      "conditions": [{"field": "violation_severity", "operator": "==", "value": "CatastrophicInversion"}],
+      "steps": ["lead_emergency_stabilization"]
+    }
+  ]
+}
